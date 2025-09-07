@@ -1,0 +1,40 @@
+Fase 1: Conceitos sobre variáveis
+O jogador terá que entender como funcionam as variáveis e que tipos de informações elas armazenam
+os exemplos serão em linguagem lúdica, por exemplo
+
+valores possíveis para:
+
+O pote pode estar:___________ (Cheio, vazio)
+Eu (o pato) posso estar: __________ (Andando, Parado)
+Estou longe do pote de ração? _________ (Verdadeiro/falso)
+Número de potes na sala:___________(1)
+
+Estes são exemplos de variáveis simples
+
+
+Fase 2: Condicionais
+O jogador vai entender como as variáveis podem afetar as ações e gerar condicionais
+O pato vai dizer que está com fome, mas o pote de ração vai estar vazio, geraremos a condicional
+
+Se o pote não estiver:_______ (Cheio)
+Então eu devo:______ (Encher o pote)
+SENÃO, eu devo: _________(Comer)
+
+Fase 3: Loops
+
+Após encher o pote de ração, o pato finalmente está livre pra comer, mas tem que chegar até lá antes.
+
+ENQUANTO (Estou longe do pote de ração) devo: _______________ (Andar)
+
+depois que ele chegar perto do pote, deve comer, e formar a nova função:
+
+Enquanto o pote não estiver (Vazio), devo: ____________ (Comer)
+
+Fase 4: Funções
+
+Finalmente, após se alimentar, o pato diz que esse processo foi muito cansativo, e que seria muito legal se ele pudesse simplificar tudo em um processo só...
+Aí entram as funções, vamos criar uma função de comer;
+
+Para comer, primeiro preciso:___________ (Verificar se o pote está cheio, (função da fase 2)
+Em seguida, preciso verificar se:_____________(Estou longe do pote)
+Finalmente, posso: ____________ (Comer)

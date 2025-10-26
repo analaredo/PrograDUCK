@@ -13,7 +13,7 @@ switch (state) {
 		y = mouse_y - drag_offset_y;
         
         if (mouse_check_button_released(mb_left)) {
-            var slot = instance_place(x, y, obj_card_slot);
+            var slot = instance_place(x, y, obj_cardslot);
             if (slot != noone) {
 				target_slot = slot;
 				if (target_slot.state == SlotState.EMPTY){

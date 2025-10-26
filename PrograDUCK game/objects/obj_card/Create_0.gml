@@ -1,3 +1,13 @@
+/// Cada instância define o que representa
+type = noone;
+value = noone;
+func_params = noone;
+card_text = "default";
+
+
+
+
+
 state   = CardState.STATIC;
 drag_offset_x = 0;
 drag_offset_y = 0;

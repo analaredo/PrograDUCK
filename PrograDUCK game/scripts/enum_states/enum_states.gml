@@ -24,14 +24,18 @@ enum DuckState {
 	EATING
 }
 
-enum Facestate {
+enum FaceState {
 	RIGHT,
 	LEFT,
 	UP,
 	DOWN
 }
 
-enum CardType {
-	VALUE,
-	ACTION
-}	
+enum ActionState {
+    WALK,
+    FILL_BOWL,
+    EAT
+}
+
+
+

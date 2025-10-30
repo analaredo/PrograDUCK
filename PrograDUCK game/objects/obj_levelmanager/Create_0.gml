@@ -1,9 +1,15 @@
-obj_goal = noone;
-slots = array_create(0);
+scr_colors();
+scr_variables();
 
-//Cria a quantidade de slots que serão executados quando o jogador iniciar seus comandos
+num_fase = 0;          // fase atual
+obj_goal = noone;      // o alvo do pato (bowl, cama etc.)
+slots = [];            // array que vai guardar os slots de comando
+script_fase = noone;
+
+// Armazena todos os obj_cardslot da room
 with (obj_cardslot) {
     array_push(other.slots, id);
 }
-
-
+       
+scr_setup_fase(num_fase);
+                    

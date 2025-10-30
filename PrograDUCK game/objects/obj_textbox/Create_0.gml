@@ -1,4 +1,4 @@
-
+card_text = " ";
 
 // Botão
 button_sprite = spr_xbutton;

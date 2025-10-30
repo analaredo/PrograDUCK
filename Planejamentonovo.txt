@@ -1,0 +1,112 @@
+🧩 Fase 1: Variáveis
+
+Objetivo de aprendizagem:
+Entender o que é uma variável e como guardar informações ou estados.
+
+Cenário narrativo:
+O pato quer conhecer o jogador e aprender a guardar dados importantes, como o nome dele e o estado do pote.
+
+Desafio:
+O jogador deve registrar informações e definir variáveis de estado.
+
+Lacunas:
+
+Perguntar: "Qual é o seu nome?"
+Quando o jogador responder, eu devo: _____________ (cumprimentar ele pelo nome)
+
+Depois disso, o jogador define:
+pote = _____________ (vazio ou cheio)
+
+
+Conceito-chave:
+Variáveis armazenam informações que mudam com o tempo.
+
+🔀 Fase 2: Condicionais (If / Else)
+
+Objetivo de aprendizagem:
+Compreender como tomar decisões baseadas em condições lógicas.
+
+Cenário narrativo:
+O pato está com fome, mas o pote pode estar vazio.
+O jogador deve decidir o que fazer com base nesse estado.
+
+Desafio:
+Criar uma estrutura condicional para decidir a ação do pato.
+
+Lacunas:
+
+Se o pote estiver VAZIO:
+    _____________ (encher o pote)
+SENÃO:
+    _____________ (comer)
+
+
+Conceito-chave:
+Condicionais permitem que o jogo tome decisões diferentes conforme o estado das variáveis.
+
+🔁 Fase 3: Loops (Repetições)
+
+Objetivo de aprendizagem:
+Entender como repetir ações automaticamente até uma condição mudar.
+
+Cenário narrativo:
+O pato começou a comer, mas precisamos parar quando a ração acabar.
+
+Desafio:
+Criar um loop que faça o pato comer até o pote ficar vazio.
+
+Lacunas:
+
+Enquanto o pote não estiver VAZIO:
+    _____________ (comer)
+
+
+Conceito-chave:
+Loops fazem ações se repetirem até uma condição ser satisfeita.
+
+⚡ Fase 4: Eventos e Interações
+
+Objetivo de aprendizagem:
+Aprender a reagir a acontecimentos no jogo (ações do jogador ou do ambiente).
+
+Cenário narrativo:
+O pato está dormindo, mas alguém liga a luz do quarto.
+
+Desafio:
+Programar uma reação para o evento “luz ligada”.
+
+Lacunas:
+
+Quando a luz for ligada:
+    _____________ (acordar o pato)
+
+
+Conceito-chave:
+Eventos disparam reações automáticas — o código “ouve” e reage.
+
+🛌 Fase 5: Funções (Rotinas Reutilizáveis)
+
+Objetivo de aprendizagem:
+Entender como agrupar várias ações em uma função para simplificar o código.
+
+Cenário narrativo:
+O pato quer facilitar sua rotina de dormir. Ele vai criar uma função “dormir”.
+
+Desafio:
+Transformar uma sequência longa em uma única função reutilizável.
+
+Lacunas:
+
+(apagar a luz) -> (ir até a cama) -> (deitar) -> (se cobrir)
+
+Função dormir():
+    apagar a luz
+    ir até a cama
+    deitar
+    se cobrir
+
+Quando o pato quiser descansar, ele deve: _____________ (chamar a função dormir)
+
+
+Conceito-chave:
+Funções permitem reutilizar e organizar código, evitando repetição.

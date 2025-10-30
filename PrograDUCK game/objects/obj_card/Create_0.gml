@@ -1,6 +1,5 @@
 /// Cada instância define o que representa
-type = noone;
-value = noone;
+card_action = noone;
 func_params = noone;
 card_text = "default";
 

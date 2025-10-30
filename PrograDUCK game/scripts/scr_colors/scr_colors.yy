@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_colors",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Interface",
+    "path":"folders/Scripts/Interface.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

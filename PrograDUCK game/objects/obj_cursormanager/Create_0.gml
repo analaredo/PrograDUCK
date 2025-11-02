@@ -1,5 +1,5 @@
 window_set_cursor(cr_none); // desativa o cursor do sistema
-
+depth = -1000;
 
 state = CursorState.IDLE;
 

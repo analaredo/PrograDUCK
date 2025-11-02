@@ -1,2 +1,3 @@
 card_action = ActionState.WALK;
-card_text = "Andar até pote";
+card_target = "obj_bowl";
+card_text = "Andar ate pote";

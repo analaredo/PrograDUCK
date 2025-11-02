@@ -5,8 +5,8 @@ function scr_fase2(){
             var slot = slots[i];
             if (instance_exists(slot) && slot.state == SlotState.FULL) {
                 // Usa as variáveis corretas do slot
-                if (slot.card_action != noone) {
-                    execute_action(slot.card_action);
+                if (slot.card_action != noone && slot.card_target != noone) {
+                    execute_action(slot.card_action, slot.card_target); // <- Adicione card_target
                 }
             }
         }

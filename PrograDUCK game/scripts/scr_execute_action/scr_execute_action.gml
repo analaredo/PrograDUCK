@@ -1,27 +1,39 @@
-function execute_action(action){
-switch (action) {
-    case ActionState.WALK:
-         with (obj_duck) {
-                var goal = instance_find(obj_bowl, 0);
-                if (instance_exists(goal)) {
-                    target = goal;
-                    state = DuckState.WALK;
-                }
+function execute_action(action, target_param){
+    switch (action) {
+        case ActionState.WALK:
+            var target_obj = noone;
+            
+            // Se target é string, resolve para instância
+            if (is_string(target_param)) {
+                target_obj = scr_verifyinstance(target_param);
             }
-            show_debug_message("Executando ação: WALK");
+            // Se target já é uma instância, usa diretamente
+            else if (instance_exists(target_param)) {
+                target_obj = target_param;
+            }
+            
+            if (target_obj == noone) {
+                show_debug_message("ERRO: Target inválido para WALK - " + string(target_param));
+                break;
+            }
+            
+            with (obj_duck) {
+                target = target_obj; // Agora não há conflito
+                state = DuckState.WALK;
+            }
+            show_debug_message("Executando ação: WALK para " + string(target_obj));
             break;
 
+        case ActionState.FILL_BOWL:
+            // Implementar depois
+            break;
 
-    case ActionState.FILL_BOWL:
-        bowl.fill();
-    break;
+        case ActionState.EAT:
+            // Implementar depois
+            break;
 
-    case ActionState.EAT:
-        duck.eat();
-    break;
-
-    default:
-        show_debug_message("Ação desconhecida!");
-    break;
-}
+        default:
+            show_debug_message("Ação desconhecida!");
+            break;
+    }
 }

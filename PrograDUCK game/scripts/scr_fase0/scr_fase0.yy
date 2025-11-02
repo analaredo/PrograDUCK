@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_walkgoal",
+  "%Name":"scr_fase0",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_walkgoal",
+  "name":"scr_fase0",
   "parent":{
-    "name":"Actions",
-    "path":"folders/Scripts/Actions.yy",
+    "name":"Scripts fases",
+    "path":"folders/Scripts/Scripts fases.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

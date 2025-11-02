@@ -1,1 +1,1 @@
-scr_fase2();
+obj_levelmanager.script_fase();

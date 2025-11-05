@@ -1,7 +1,12 @@
 scr_colors();
 scr_variables();
 
-num_fase = 0;          // fase atual
+num_fase = 0; //faseatual
+texto_fase = noone;
+x_text = 24;
+y_text = 40;
+font_text = enunciado_font;
+color_text = global.duck_green;
 slots = [];            // array que vai guardar os slots de comando
 script_fase = noone;
 

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_execute_action",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

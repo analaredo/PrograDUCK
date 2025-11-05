@@ -1,3 +1,36 @@
+// Resolve target (string or instance) and command the duck to walk to it
+function scr_walk(target_param) {
+    
+    //Procura a instance na room, transformando string em instância se necessário
+    var target_obj = noone;
+    
+    if (is_string(target_param)) {
+        target_obj = scr_verifyinstance(target_param);
+    }
+
+    else if (instance_exists(target_param)) {
+        target_obj = target_param;
+    }
+
+    if (target_obj == noone) {
+        with (obj_duck) {
+            state = DuckState.CONFUSED;
+        }
+        show_debug_message("Target inválido para WALK - setando DuckState.CONFUSED: " + string(target_param));
+        return false;
+    }
+
+    // Ajusta todas as instâncias do pato para iniciar caminhada 
+    with (obj_duck) {
+        target = target_obj;
+		arrived = false;
+        state = DuckState.WALK;
+       
+    }
+
+    show_debug_message("Executando ação: WALK para " + string(target_obj));
+    return true;
+}
 /// @function walk()
 /// Move o pato em direção ao obj_goal e atualiza o sprite
 
@@ -10,12 +43,8 @@ function walk(obj_goal) {
     var dy = obj_goal.y - y;
     var dist = point_distance(x, y, obj_goal.x, obj_goal.y);
 
-    // Se chegou no destino, para
+    // Se já está muito perto, não move (chegada tratada pelo obj_duck Step)
     if (dist < 2) {
-        state = DuckState.IDLE;
-        image_speed = 0;
-        image_index = 0;
-        sprite_index = sprite[DuckState.IDLE][face];
         return;
     }
 

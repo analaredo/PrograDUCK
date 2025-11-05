@@ -1,3 +1,2 @@
-card_text = "Andar";
-value = walk;
-func_params = obj_bowl;
+card_action = ActionState.FILL_BOWL;
+card_text = "Encher pote";

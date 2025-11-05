@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"enum_states",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

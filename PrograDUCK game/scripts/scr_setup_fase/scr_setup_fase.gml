@@ -6,8 +6,8 @@ function scr_setup_fase(fase) {
         
         case 0:
             // Fase 0 — introdução: o pato deve andar até o pote
-			texto_fase = "Se o pote estiver \nVAZIO:\n\n\n\n\n\nCaso contrario:\n";			
-			script_fase = scr_test;
+			texto_fase = "Se o pote estiver \nVAZIO:\n\n\n\n\n\Para então:\n";			
+			script_fase = scr_fase0;
             show_debug_message("Fase 0 iniciada: Andar até o pote de ração.");
         break;
 

@@ -18,7 +18,7 @@
     {"name":"inst_7DF9C85A","path":"rooms/rm_fase1/rm_fase1.yy",},
     {"name":"inst_176D5FE5","path":"rooms/rm_fase1/rm_fase1.yy",},
     {"name":"inst_60C1191","path":"rooms/rm_fase1/rm_fase1.yy",},
-    {"name":"inst_5B7BDF7C","path":"rooms/rm_fase1/rm_fase1.yy",},
+    {"name":"inst_13E98DF9","path":"rooms/rm_fase1/rm_fase1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -42,7 +42,7 @@
           ],"layers":[],"name":"Cards","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Slots","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v1","%Name":"inst_3AA9AAA8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3AA9AAA8","objectId":{"name":"obj_cardslot","path":"objects/obj_cardslot/obj_cardslot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.5,"y":54.89229,},
-            {"$GMRInstance":"v1","%Name":"inst_5B7BDF7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5B7BDF7C","objectId":{"name":"obj_cardslot","path":"objects/obj_cardslot/obj_cardslot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.5,"y":148.0,},
+            {"$GMRInstance":"v1","%Name":"inst_13E98DF9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13E98DF9","objectId":{"name":"obj_cardslot","path":"objects/obj_cardslot/obj_cardslot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.5,"y":145.0,},
           ],"layers":[],"name":"Slots","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"Instances","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[

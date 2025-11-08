@@ -21,7 +21,8 @@ enum DuckState {
 	WALK,
 	CONFUSED,
 	HAPPY,
-	EATING
+	EATING,
+	FINISHED
 }
 
 enum FaceState {

@@ -13,7 +13,8 @@ function execute_action(action, target_param){
             break;
 
         case ActionState.EAT:
-            show_debug_message("Executando EAT (não implementado)");
+            show_debug_message("Executando EAT" );
+			scr_eat();
             break;
 
         default:

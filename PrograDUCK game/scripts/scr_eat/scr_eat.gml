@@ -20,7 +20,7 @@ function scr_eat()
                 {
                     if (obj_bowl.state == SlotState.EMPTY)
                     {
-                        startDialogue(DuckTopics.ERROR_NOFOOD);
+                        startDialogue($"ERROR_NOFOOD");
                         state = DuckState.CONFUSED;
                     }
                     else
@@ -35,7 +35,7 @@ function scr_eat()
             
             case 2:
                 obj_bowl.state = SlotState.EMPTY;
-                startDialogue(DuckTopics.SUCESS_EATING);
+                startDialogue($"SUCESS_EATING");
                 state = DuckState.HAPPY;
                 break;
         }

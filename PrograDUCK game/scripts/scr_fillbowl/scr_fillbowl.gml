@@ -30,7 +30,7 @@ function scr_fillbowl()
                 {
                     if (obj_bowl.state == SlotState.FULL)
                     {
-                        startDialogue(DuckTopics.ERROR_BOWLFULL);
+                        startDialogue($"ERROR_BOWLFULL");
                         state = DuckState.CONFUSED;
                         exit;
                     }

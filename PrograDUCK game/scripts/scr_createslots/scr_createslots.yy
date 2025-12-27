@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_typing",
+  "%Name":"scr_createslots",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_typing",
+  "name":"scr_createslots",
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

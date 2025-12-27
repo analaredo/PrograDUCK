@@ -6,7 +6,7 @@
   "name":"scr_topics",
   "parent":{
     "name":"Dialogue",
-    "path":"folders/Dialogue.yy",
+    "path":"folders/Objects/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

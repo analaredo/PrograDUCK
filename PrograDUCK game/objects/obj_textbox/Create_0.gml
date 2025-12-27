@@ -8,20 +8,22 @@ max_input_delay = 5; // how many frames to ignore input
 input_delay = max_input_delay;
 
 // Position
-margin = 16; // how much space the textbox gets from the edges of the screen
-padding = 8; // how much space things inside the textbox get
-width = display_get_gui_width() - margin * 2;
-height = sprite_height;
+margin_left = 32; // margem da esquerda
+margin_right = 200; // margem da direita (maior para não ficar muito comprida)
+margin_bottom = 10; // margem de baixo
+padding = 16; // how much space things inside the textbox get - aumentando para mais espaço
+width = display_get_gui_width() - margin_left - margin_right;
+height = sprite_get_height(spr_portrait); // Match height with spr_portrait
 
-x = (display_get_gui_width() - width) / 2;
-y = display_get_gui_height() - height - margin;
+x = margin_left; // Alinhado à esquerda
+y = display_get_gui_height() - height - margin_bottom;
 
 // Text
 text_font = card_font;
 text_color = c_white;
 text_speed = 0.6;
 text_x = padding;
-text_y = padding * 3;
+text_y = padding * 2 + 40; // Abaixando o texto 10 pixels
 text_width = width - padding * 2;
 
 // Portrait
@@ -29,20 +31,20 @@ portrait_x = padding;
 portrait_y = padding;
 
 // Speaker
-speaker_x = padding;
-speaker_y = 0;
+speaker_x = sprite_get_width(spr_portrait) + padding; // Posicionar ao lado do portrait
+speaker_y = 34;
 speaker_font = card_font;
-speaker_color = #464633;
+speaker_color = c_white;
 
 // Option
 option_x = padding;
-option_y = padding * -6;
-option_spacing = 50;
-option_selection_indent = 24;
-option_width = 300;
-option_height = 40;
-option_text_x = 10;
-option_text_color = c_white;
+option_y = -50; // Posição bem acima para teste
+option_spacing = 120; // Aumentando espaçamento entre opções
+option_selection_indent = 80;
+option_width = sprite_get_width(spr_option)*1.2; // Largura maior
+option_height =  sprite_get_height(spr_option)*0.76; // Altura maior para os botões
+option_text_x = 30;
+option_text_color = c_white; // Cor vermelha para destacar
 
 /// Private properties
 /*** LOOK BUT DO NOT EDIT! ***/
@@ -76,7 +78,7 @@ option_count = 0;
 
 // Start a conversation
 setTopic = function(topic) {
-	actions = global.topics[ topic];
+	actions = global.topics[$ topic];
 	current_action = -1;
 		
 	next();

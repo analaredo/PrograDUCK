@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_portrait",
   "bboxMode":0,
-  "bbox_bottom":52,
+  "bbox_bottom":253,
   "bbox_left":0,
-  "bbox_right":52,
+  "bbox_right":253,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":53,
+  "height":254,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d36908d4-92d9-45b2-b218-eb2a7c42e061","blendMode":0,"displayName":"default","isLocked":false,"name":"d36908d4-92d9-45b2-b218-eb2a7c42e061","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Portraits",
+    "path":"folders/Sprites/Portraits.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":53,
+  "width":254,
 }

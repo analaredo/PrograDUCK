@@ -38,10 +38,3 @@ enum ActionState {
     EAT
 }
 
-enum DuckTopics {
-	ERROR_BOWLFULL,
-	SUCESS_EATING,
-	INTRO_FASE1,
-	ERROR_NOFOOD
-}
-

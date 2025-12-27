@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_card_slot",
   "bboxMode":0,
-  "bbox_bottom":29,
+  "bbox_bottom":23,
   "bbox_left":0,
-  "bbox_right":74,
+  "bbox_right":59,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":30,
+  "height":24,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"90888475-36bd-4adb-8b6d-7cfa787a1821","blendMode":0,"displayName":"default","isLocked":false,"name":"90888475-36bd-4adb-8b6d-7cfa787a1821","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":75,
+  "width":60,
 }

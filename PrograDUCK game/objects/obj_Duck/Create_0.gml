@@ -1,10 +1,11 @@
 //INICIALIZAÇÃO DE ESTADOS BASICOS
-face	 = FaceState.RIGHT;
+face = FaceState.RIGHT;
 current_action = noone;
 fill_step = 0;
 state = DuckState.IDLE;
 target = noone;
 spd = 1;
+arrived = false;
 
 //INICIALIZAÇÃO DE NECESSIDADES
 is_hungry = true;

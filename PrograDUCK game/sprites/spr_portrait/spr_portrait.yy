@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_portrait",
   "bboxMode":0,
-  "bbox_bottom":0,
+  "bbox_bottom":52,
   "bbox_left":0,
-  "bbox_right":0,
+  "bbox_right":52,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"fbdefb0f-309f-4be3-baa3-52459c1910af","name":"fbdefb0f-309f-4be3-baa3-52459c1910af","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4c50d847-542c-4ee7-8a21-bba520d010a3","name":"4c50d847-542c-4ee7-8a21-bba520d010a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":53,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"284a1724-3ecf-4fc9-8520-a398fe049fb0","blendMode":0,"displayName":"default","isLocked":false,"name":"284a1724-3ecf-4fc9-8520-a398fe049fb0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d36908d4-92d9-45b2-b218-eb2a7c42e061","blendMode":0,"displayName":"default","isLocked":false,"name":"d36908d4-92d9-45b2-b218-eb2a7c42e061","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_portrait",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Portraits",
-    "path":"folders/Sprites/Portraits.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fbdefb0f-309f-4be3-baa3-52459c1910af","path":"sprites/spr_portrait/spr_portrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4d93d0f8-cab3-45c7-ba47-cbf642075bdd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4c50d847-542c-4ee7-8a21-bba520d010a3","path":"sprites/spr_portrait/spr_portrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f9c013fa-9744-43fb-a69f-b5deaa8402b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":53,
 }

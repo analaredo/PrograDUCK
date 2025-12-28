@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_foodbox",
   "bboxMode":0,
-  "bbox_bottom":33,
+  "bbox_bottom":67,
   "bbox_left":0,
-  "bbox_right":23,
+  "bbox_right":47,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":34,
+  "height":68,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2a5dfa83-6593-42b2-8372-38ff18dfcbaf","blendMode":0,"displayName":"default","isLocked":false,"name":"2a5dfa83-6593-42b2-8372-38ff18dfcbaf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":24,
+  "width":48,
 }

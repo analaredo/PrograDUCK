@@ -2,12 +2,18 @@
 card_action = noone;
 card_target = " ";
 func_params = noone;
+
+
+
+//definições draw
 card_text = "default";
+font = card_font;
+color = #462d5c;
+padding = 15;
 
 
 
-
-
+//Definições dragging
 state   = CardState.STATIC;
 drag_offset_x = 0;
 drag_offset_y = 0;

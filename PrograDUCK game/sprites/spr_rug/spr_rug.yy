@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_rug",
   "bboxMode":0,
-  "bbox_bottom":33,
+  "bbox_bottom":67,
   "bbox_left":0,
-  "bbox_right":49,
+  "bbox_right":99,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":34,
+  "height":68,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"21c77205-9305-493d-b2ff-f5d3ff997605","blendMode":0,"displayName":"default","isLocked":false,"name":"21c77205-9305-493d-b2ff-f5d3ff997605","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":50,
+  "width":100,
 }

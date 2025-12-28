@@ -1,0 +1,1 @@
+text_content =  "Se o pote estiver VAZIO:";

@@ -1,2 +1,3 @@
- card_action = ActionState.FILL_BOWL;
-card_text = "Encher pote";
+ card_action = ActionState.WALK;
+card_text = "Pegar ração";
+card_target = "obj_foodbox";

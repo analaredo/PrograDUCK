@@ -40,5 +40,8 @@ function scr_drawtext(text, font, text_color, vertical_offset = 0) {
         scale,
         0
     );
+	
+	 draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
     
 }

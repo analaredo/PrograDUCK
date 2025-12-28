@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_quit",
+  "%Name":"obj_button_stats",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_quit",
+  "name":"obj_button_stats",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonparent","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Sair",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonparent","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"estatísticas",},
   ],
   "parent":{
     "name":"Buttons",

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_card",
-    "path":"sprites/spr_card/spr_card.yy",
+    "name":"spr_menubutton",
+    "path":"sprites/spr_menubutton/spr_menubutton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

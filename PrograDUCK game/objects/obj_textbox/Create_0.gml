@@ -19,8 +19,8 @@ x = margin_left; // Alinhado à esquerda
 y = display_get_gui_height() - height - margin_bottom;
 
 // Text
-text_font = card_font;
-text_color = c_white;
+text_font = dialogue_font;
+text_color = #47461D;
 text_speed = 0.6;
 text_x = padding;
 text_y = padding * 2 + 40; // Abaixando o texto 10 pixels

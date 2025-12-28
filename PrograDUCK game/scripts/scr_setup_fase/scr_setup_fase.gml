@@ -8,7 +8,7 @@ function scr_setup_fase(fase) {
         break;
         
         case 0:
-			script_fase = scr_fase0;
+			script_fase = scr_level1;
             show_debug_message("Fase 0 iniciada: Andar até o pote de ração.");
         break;
 

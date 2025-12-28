@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_addSlotToQueue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_addSlotToQueue",
+  "parent":{
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

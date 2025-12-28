@@ -17,6 +17,7 @@ function scr_test(){
         // Se a tigela está vazia, adiciona slot 0 na queue
         if (bowl_empty && array_length(slots) > 0) {
             var slot = slots[0];
+			
             
             if (instance_exists(slot) && slot.state == SlotState.FULL) {
                 if (slot.card_action != noone && slot.card_target != noone) {

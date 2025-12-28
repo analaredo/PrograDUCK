@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cursormanager",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_helpbutton",
+  "eventList":[],
   "managed":true,
-  "name":"obj_cursormanager",
+  "name":"obj_helpbutton",
   "overriddenProperties":[],
   "parent":{
     "name":"Interface",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cursor_IDLE",
-    "path":"sprites/spr_cursor_IDLE/spr_cursor_IDLE.yy",
+    "name":"spr_help",
+    "path":"sprites/spr_help/spr_help.yy",
   },
   "spriteMaskId":null,
   "visible":true,

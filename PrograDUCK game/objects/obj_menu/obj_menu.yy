@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cursormanager",
+  "%Name":"obj_menu",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cursormanager",
+  "name":"obj_menu",
   "overriddenProperties":[],
   "parent":{
     "name":"Interface",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cursor_IDLE",
-    "path":"sprites/spr_cursor_IDLE/spr_cursor_IDLE.yy",
+    "name":"spr_home",
+    "path":"sprites/spr_home/spr_home.yy",
   },
   "spriteMaskId":null,
   "visible":true,

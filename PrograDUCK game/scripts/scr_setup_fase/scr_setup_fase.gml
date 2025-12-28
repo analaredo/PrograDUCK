@@ -1,6 +1,11 @@
 
 function scr_setup_fase(fase) {
     switch (fase) {
+		
+		case -1:
+			draw_set_color(c_white);
+            show_debug_message("Fase 0 iniciada: Andar até o pote de ração.");
+        break;
         
         case 0:
 			script_fase = scr_fase0;

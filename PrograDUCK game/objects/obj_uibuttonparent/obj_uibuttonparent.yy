@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fullscreen",
+  "%Name":"obj_uibuttonparent",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_fullscreen",
+  "name":"obj_uibuttonparent",
   "overriddenProperties":[],
   "parent":{
     "name":"Interface",
     "path":"folders/Objects/Interface.yy",
   },
-  "parentObjectId":{
-    "name":"obj_uibuttonparent",
-    "path":"objects/obj_uibuttonparent/obj_uibuttonparent.yy",
-  },
-  "persistent":true,
+  "parentObjectId":null,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_fullscreen",
-    "path":"sprites/spr_fullscreen/spr_fullscreen.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

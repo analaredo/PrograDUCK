@@ -1,1 +1,0 @@
-text_content = "Sem estatísticas ainda!";

@@ -9,7 +9,10 @@
     "name":"Interface",
     "path":"folders/Objects/Interface.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_uibuttonparent",
+    "path":"objects/obj_uibuttonparent/obj_uibuttonparent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

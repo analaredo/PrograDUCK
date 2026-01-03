@@ -2,50 +2,38 @@ function scr_fillbowl()
 {
     with (obj_duck)
     {
-        if (current_action != ActionState.FILL_BOWL)
+        // Verifica se o pato tem comida
+        if (!has_food)
         {
-            current_action = ActionState.FILL_BOWL;
-            fill_step = 0;
+            startDialogue($"ERROR_NOFILLFOOD");
+            state = DuckState.CONFUSED;
+            return;
         }
         
-        switch (fill_step)
+      
+        var bowl_obj = scr_verifyinstance("obj_bowl");
+        if (bowl_obj == noone)
         {
-            case 0:
-                scr_walk("obj_foodbox");
-                fill_step = 1;
-                break;
-            
-            case 1:
-                if (arrived)
-                {
-                    scr_walk("obj_bowl");
-                    arrived = false;
-                    fill_step = 2;
-                }
-                
-                break;
-            
-            case 2:
-                if (arrived)
-                {
-                    if (obj_bowl.state == SlotState.FULL)
-                    {
-                        startDialogue($"ERROR_BOWLFULL");
-                        state = DuckState.CONFUSED;
-                        exit;
-                    }
-                    
-                    fill_step = 3;
-                    show_debug_message("Pote cheio!");
-                }
-                
-                break;
-            
-            case 3:
-                obj_bowl.state = SlotState.FULL;
-                current_action = noone;
-                state = DuckState.IDLE;
-                break;
+            return;
         }
+        
+        if (point_distance(x, y, bowl_obj.x, bowl_obj.y) >= spd)
+        {
+            startDialogue($"ERROR_FARFROMBOWL");
+            state = DuckState.CONFUSED;
+            return;
+        }
+        
+        // Verifica se o bowl já está cheio
+        if (bowl_obj.state == SlotState.FULL)
+        {
+            startDialogue($"ERROR_BOWLFULL");
+            state = DuckState.CONFUSED;
+            return;
+        }
+        
+        // Se chegou até aqui, pode encher o bowl
+        bowl_obj.state = SlotState.FULL;
+        has_food = false; // Remove a comida do pato
     }
 }

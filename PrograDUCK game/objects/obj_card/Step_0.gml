@@ -1,7 +1,8 @@
 switch (state) {
     
     case CardState.STATIC:
-        if (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
+        // Só permite interação se não há diálogos ou execução ativa
+        if (can_interact() && mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id)) {
              drag_offset_x = mouse_x - x;
              drag_offset_y = mouse_y - y;
              

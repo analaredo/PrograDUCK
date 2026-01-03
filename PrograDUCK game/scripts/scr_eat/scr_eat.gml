@@ -2,42 +2,31 @@ function scr_eat()
 {
     with (obj_duck)
     {
-        if (current_action != ActionState.EAT)
+        // Verifica se está perto do obj_bowl usando scr_verifyinstance
+        var bowl_obj = scr_verifyinstance("obj_bowl");
+        if (bowl_obj == noone)
         {
-            current_action = ActionState.EAT;
-            fill_step = 0;
+            return;
         }
         
-        switch (fill_step)
+        if (point_distance(x, y, bowl_obj.x, bowl_obj.y) >= spd)
         {
-            case 0:
-                scr_walk("obj_bowl");
-                fill_step = 1;
-                break;
-            
-            case 1:
-                if (arrived)
-                {
-                    if (obj_bowl.state == SlotState.EMPTY)
-                    {
-                        startDialogue($"ERROR_NOFOOD");
-                        state = DuckState.CONFUSED;
-                    }
-                    else
-                    {
-                        fill_step = 2;
-                        show_debug_message("Comendo...");
-                        exit;
-                    }
-                }
-                
-                break;
-            
-            case 2:
-                obj_bowl.state = SlotState.EMPTY;
-                startDialogue($"SUCESS_EATING");
-                state = DuckState.HAPPY;
-                break;
+           startDialogue($"ERROR_FARFROMBOWLEAT");
+            return;
         }
+        
+        // Verifica se o bowl tem comida
+        if (bowl_obj.state == SlotState.EMPTY)
+        {
+            startDialogue($"ERROR_NOFOOD");
+            state = DuckState.CONFUSED;
+            return;
+        }
+        
+        bowl_obj.state = SlotState.EMPTY;
+        current_action = noone;
+        startDialogue($"SUCESS_EATING");
+        state = DuckState.IDLE;
+        show_debug_message("Comendo...");
     }
 }

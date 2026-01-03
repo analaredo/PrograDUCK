@@ -22,7 +22,8 @@ enum DuckState {
 	CONFUSED,
 	HAPPY,
 	EATING,
-	FINISHED
+	FINISHED,
+	CARRYING_FOOD	
 }
 
 enum FaceState {
@@ -30,11 +31,5 @@ enum FaceState {
 	LEFT,
 	UP,
 	DOWN
-}
-
-enum ActionState {
-    WALK,
-    FILL_BOWL,
-    EAT
 }
 

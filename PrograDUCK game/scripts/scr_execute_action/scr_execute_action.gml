@@ -1,26 +1,25 @@
 function execute_action(action, target_param){
-    show_debug_message("=== execute_action chamada com action: " + string(action) + ", target: " + string(target_param) + " ===");
     
     switch (action) {
-        case ActionState.WALK:
-            show_debug_message("Executando WALK");
+        case scr_walk:
             scr_walk(target_param);
             break;
 
-        case ActionState.FILL_BOWL:
-            show_debug_message("Executando FILL_BOWL");
+        case scr_fillbowl:
             scr_fillbowl();
             break;
 
-        case ActionState.EAT:
-            show_debug_message("Executando EAT" );
+        case scr_eat:
 			scr_eat();
             break;
+			
+		 case scr_getfood:
+			scr_getfood();
+            break;	
 
         default:
             show_debug_message("Ação desconhecida: " + string(action));
             break;
     }
     
-    show_debug_message("=== execute_action finalizada ===");
 }

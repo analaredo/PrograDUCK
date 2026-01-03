@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script20",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script20",
+  "parent":{
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

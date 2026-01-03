@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_level1",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Scripts fases",
+    "path":"folders/Scripts/Scripts fases.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

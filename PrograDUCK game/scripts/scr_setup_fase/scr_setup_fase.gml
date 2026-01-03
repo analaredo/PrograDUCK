@@ -9,11 +9,13 @@ function scr_setup_fase(fase) {
         
         case 0:
 			script_fase = scr_level1;
-            show_debug_message("Fase 0 iniciada: Andar até o pote de ração.");
+			help_fase = $"HELP_LEVEL1";
         break;
 
         case 1:
-            show_debug_message("Fase 1 iniciada: Teste de condicionais.");
+            script_fase = scr_level1;
+			help_fase = $"HELP_LEVEL1";
+			inicio_fase = $"INTRO_LEVEL1";
         break;
 
         case 2:

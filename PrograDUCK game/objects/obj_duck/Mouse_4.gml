@@ -1,0 +1,1 @@
+audio_play_sound(snd_quack,0,false);

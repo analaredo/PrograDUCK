@@ -25,5 +25,5 @@ function scr_win () {
 	 }
  }
  
- room_goto(rm_levels);
+
 }

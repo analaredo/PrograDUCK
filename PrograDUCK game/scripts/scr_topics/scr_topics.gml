@@ -88,9 +88,10 @@ global.topics[$"INTRO_LEVEL1"] = [
 //-------SUCESSOS -------
 global.topics[$"SUCESS_EATING"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Sim!"),
-	TEXT("Consegui comer minha ração!"),
-	TEXT("Parabéns, humano!")
+	TEXT("Isso!"),
+	TEXT("Conseguimos preparar tudo corretamente!"),
+	TEXT("Parabéns, humano!"),
+	TEXT("Tenho uma dieta muito complicada, e preciso comer de um jeito especial...mas te explico melhor na próxima fase, até la!")
 ];
 
 //-------AJUDA -------

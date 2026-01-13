@@ -4,7 +4,7 @@ function scr_getfood(){
          if (has_food)
                 {
                     startDialogue($"ERROR_ALREADYHASFOOD");
-                    state = DuckState.CONFUSED;
+                    scr_fail ();
                     return;
                 }
         
@@ -18,7 +18,7 @@ function scr_getfood(){
          if (point_distance(x, y, goal_obj.x, goal_obj.y) >= spd)
                 {
                     startDialogue($"ERROR_FARFROMBOX");
-                    state = DuckState.CONFUSED;
+                    scr_fail ();
                     return;
                 }
         

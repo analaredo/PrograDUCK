@@ -14,7 +14,7 @@ function scr_walk(target_param) {
 
     if (target_obj == noone) {
         with (obj_duck) {
-            state = DuckState.CONFUSED;
+            scr_fail ();
         }
         show_debug_message("Target inválido para WALK - setando DuckState.CONFUSED: " + string(target_param));
         return false;

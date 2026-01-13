@@ -11,15 +11,18 @@ function scr_eat()
         
         if (point_distance(x, y, bowl_obj.x, bowl_obj.y) >= spd)
         {
+	
            startDialogue($"ERROR_FARFROMBOWLEAT");
+			scr_fail ();
             return;
         }
         
         // Verifica se o bowl tem comida
         if (bowl_obj.state == SlotState.EMPTY)
         {
+			
             startDialogue($"ERROR_NOFOOD");
-            state = DuckState.CONFUSED;
+			 scr_fail ();
             return;
         }
         

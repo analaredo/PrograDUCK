@@ -6,7 +6,7 @@ function scr_fillbowl()
         if (!has_food)
         {
             startDialogue($"ERROR_NOFILLFOOD");
-            state = DuckState.CONFUSED;
+            scr_fail ();
             return;
         }
         
@@ -20,7 +20,7 @@ function scr_fillbowl()
         if (point_distance(x, y, bowl_obj.x, bowl_obj.y) >= spd)
         {
             startDialogue($"ERROR_FARFROMBOWL");
-            state = DuckState.CONFUSED;
+            scr_fail ();
             return;
         }
         
@@ -28,7 +28,7 @@ function scr_fillbowl()
         if (bowl_obj.state == SlotState.FULL)
         {
             startDialogue($"ERROR_BOWLFULL");
-            state = DuckState.CONFUSED;
+            scr_fail ();
             return;
         }
         

@@ -1,5 +1,7 @@
-scr_colors();
+
 scr_variables();
+
+
 
 num_fase = noone;
 slots = [];            

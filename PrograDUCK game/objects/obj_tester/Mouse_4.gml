@@ -1,0 +1,1 @@
+global.totalhelp+=1;

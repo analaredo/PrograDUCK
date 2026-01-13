@@ -23,10 +23,12 @@ function scr_eat()
             return;
         }
         
-        bowl_obj.state = SlotState.EMPTY;
+       
         current_action = noone;
+		global.levelblocked[2] = 1;
         startDialogue($"SUCESS_EATING");
         state = DuckState.IDLE;
-        show_debug_message("Comendo...");
+		scr_win();
+        
     }
 }

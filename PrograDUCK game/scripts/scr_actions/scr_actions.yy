@@ -6,7 +6,7 @@
   "name":"scr_actions",
   "parent":{
     "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "path":"folders/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

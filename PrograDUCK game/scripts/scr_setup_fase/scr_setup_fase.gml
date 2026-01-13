@@ -13,13 +13,13 @@ function scr_setup_fase(fase) {
         break;
 
         case 1:
-            script_fase = scr_level1;
-			help_fase = $"HELP_LEVEL1";
-			inicio_fase = $"INTRO_LEVEL1";
+            
         break;
 
         case 2:
-            show_debug_message("Fase 2 iniciada: Usando loops.");
+            script_fase = scr_level1;
+			help_fase = $"HELP_LEVEL1";
+			inicio_fase = $"INTRO_LEVEL1";
         break;
     }
 }

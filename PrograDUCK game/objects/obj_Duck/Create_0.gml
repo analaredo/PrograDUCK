@@ -4,7 +4,7 @@ state = DuckState.IDLE;
 current_action = noone;
 fill_step = 0;
 target = noone;
-spd = 2;
+spd = 2 ;
 arrived = false;
 has_food = false;
 
@@ -26,7 +26,7 @@ sprite[DuckState.WALK, FaceState.DOWN] = spr_duck_walk_down;
 
 // Sprites para o estado CONFUSED
 sprite[DuckState.CONFUSED, FaceState.RIGHT] = spr_duck_confused_right;
-sprite[DuckState.CONFUSED, FaceState.LEFT] = spr_duck_confused_left;
-sprite[DuckState.CONFUSED, FaceState.UP] = spr_duck_confused_up;
-sprite[DuckState.CONFUSED, FaceState.DOWN] = spr_duck_confused_down;
+sprite[DuckState.CONFUSED, FaceState.LEFT] = spr_duck_confused_right;
+sprite[DuckState.CONFUSED, FaceState.UP] = spr_duck_confused_right;
+sprite[DuckState.CONFUSED, FaceState.DOWN] = spr_duck_confused_right;
 

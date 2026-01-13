@@ -1,5 +1,5 @@
  // Inherit the parent event
 event_inherited();
 
-room_goto(rm_fase1);
+room_goto(rm_levels);
 

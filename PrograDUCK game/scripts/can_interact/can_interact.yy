@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"can_interact",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"can_interact",
+  "parent":{
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

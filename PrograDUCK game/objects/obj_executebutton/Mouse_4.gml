@@ -10,5 +10,9 @@ with (obj_duck) {
 
 if (can_interact()) {
     event_inherited();
+   
+    
+    global.totaltries += 1;
     obj_levelmanager.script_fase();
 } 
+

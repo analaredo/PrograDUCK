@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Mrnu",
-    "path":"folders/Sprites/Mrnu.yy",
+    "name":"MEnu",
+    "path":"folders/Sprites/MEnu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

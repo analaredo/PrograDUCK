@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_ducktalking",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":0,
-  "bitRate":128,
+  "channelFormat":2,
   "compression":1,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":18.816,
+  "exportDir":"",
   "name":"snd_ducktalking",
   "parent":{
     "name":"Sounds",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":48000,
   "soundFile":"snd_ducktalking.mp3",
-  "type":2,
   "volume":0.69,
 }

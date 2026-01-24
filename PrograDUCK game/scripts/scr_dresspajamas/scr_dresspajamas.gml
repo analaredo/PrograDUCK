@@ -22,6 +22,14 @@ function scr_dresspajamas(){
                     return;
                 }
         
+        var goal_obj = scr_verifyinstance("obj_lamp");
+         if (goal_obj.state == SlotState.EMPTY)	
+                {
+                    startDialogue($"ERROR_LIGHTISOFFCLOTHES");
+                    scr_fail ();
+                    return;
+                }
+
         clothes = ClothesState.PAJAMAS;
         
       

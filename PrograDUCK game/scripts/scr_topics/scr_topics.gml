@@ -120,6 +120,14 @@ global.topics[$"ERROR_FARFROMLAMP"] = [
 	
 ];
 
+global.topics[$"ERROR_LIGHTISOFFCLOTHES"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Não consigo trocar de roupa com a luz apagada!"),
+	TEXT("Vou me enrolar todo..."),
+	GOTO("TRY_AGAIN")
+	
+];
+
 global.topics[$"ERROR_LIGHTON"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Não consigo dormir com a luz acesa..."),

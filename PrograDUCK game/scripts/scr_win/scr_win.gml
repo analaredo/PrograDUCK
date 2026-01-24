@@ -17,11 +17,11 @@ function scr_win () {
 			 room_index = -1; // Não libera nada
 			 break; 
 	 }  
-	 
+	 global.levelscompleted++;
 	 // Libera a próxima fase se ela existir
 	 if (room_index != -1 && room_index < array_length(global.levels)) {
 		 global.levels[room_index] = 1;
-		 global.levelscompleted++;
+		 
 	 }
  }
  

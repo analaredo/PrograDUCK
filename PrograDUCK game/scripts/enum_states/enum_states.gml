@@ -16,6 +16,11 @@ enum CursorState {
     CLICKING
 }
 
+enum ClothesState {
+	PAJAMAS,
+	NORMAL
+}
+
 enum DuckState {
 	IDLE,
 	WALK,

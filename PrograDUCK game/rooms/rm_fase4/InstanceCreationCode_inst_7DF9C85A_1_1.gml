@@ -1,1 +1,1 @@
-num_fase = 1;
+num_fase = 4;

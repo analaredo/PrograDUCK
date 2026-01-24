@@ -1,11 +1,6 @@
 // Só executa se pode interagir
 
-with (obj_duck) {
-	has_food = false;
-	
-}	
-
-
+scr_reset();
 
 
 if (can_interact()) {

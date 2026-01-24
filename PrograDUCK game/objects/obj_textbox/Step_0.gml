@@ -17,7 +17,7 @@ if (text_progress == text_length) {
 		var down = keyboard_check_pressed(down_key);
 		
 		// Cycle through available options
-		var change = down - up;
+		var change =  up - down;
 		if (change != 0) {
 			current_option += change;
 		

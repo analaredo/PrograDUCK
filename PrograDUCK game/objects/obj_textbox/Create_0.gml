@@ -38,13 +38,13 @@ speaker_color = c_white;
 
 // Option
 option_x = padding;
-option_y = -50; // Posição bem acima para teste
+option_y = -50; 
 option_spacing = 120; // Aumentando espaçamento entre opções
 option_selection_indent = 80;
 option_width = sprite_get_width(spr_option)*1.2; // Largura maior
-option_height =  sprite_get_height(spr_option)*0.76; // Altura maior para os botões
+option_height =  sprite_get_height(spr_option)*0.60; // Altura maior para os botões
 option_text_x = 30;
-option_text_color = c_white; // Cor vermelha para destacar
+option_text_color = #47461D; 
 
 /// Private properties
 /*** LOOK BUT DO NOT EDIT! ***/

@@ -29,7 +29,7 @@ function scr_eat()
        
         current_action = noone;
 		global.levelblocked[2] = 1;
-        startDialogue($"SUCESS_EATING");
+        startDialogue($"SUCESS_LEVEL2");
         state = DuckState.IDLE;
 		scr_win();
         

@@ -1,6 +1,9 @@
 //INICIALIZAÇÃO DE ESTADOS BASICOS
-face = FaceState.RIGHT;
+face = FaceState.DOWN;
 state = DuckState.IDLE;
+clothes = ClothesState.NORMAL;
+initial_x = x;
+initial_y = y;
 current_action = noone;
 fill_step = 0;
 target = noone;
@@ -18,9 +21,9 @@ sprite[DuckState.IDLE, FaceState.UP] = spr_duck_idle_up;
 sprite[DuckState.IDLE, FaceState.DOWN] = spr_duck_idle_down;
 
 
-// Temporariamente, use os sprites de IDLE para WALK
-sprite[DuckState.WALK, FaceState.RIGHT] = spr_duck_idle_right;
-sprite[DuckState.WALK, FaceState.LEFT] = spr_duck_idle_left;
+// WALK
+sprite[DuckState.WALK, FaceState.RIGHT] = spr_duck_walk_right;
+sprite[DuckState.WALK, FaceState.LEFT] = spr_duck_walk_left;
 sprite[DuckState.WALK, FaceState.UP] = spr_duck_walk_up;
 sprite[DuckState.WALK, FaceState.DOWN] = spr_duck_walk_down;
 

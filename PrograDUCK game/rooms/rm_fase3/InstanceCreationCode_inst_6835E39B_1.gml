@@ -1,1 +1,1 @@
-text_content =  "Se o pote estiver VAZIO:";
+text_content =  "Enquanto o número \nde mordidas for:";

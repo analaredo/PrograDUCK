@@ -1,8 +1,25 @@
 // Get input
 var confirm = keyboard_check_pressed(confirm_key);
 
+// Diminui o cooldown do som
+if (sound_cooldown > 0) {
+	sound_cooldown--;
+}
+
 // Type out the text
+var old_progress = text_progress;
 text_progress = min(text_progress + text_speed, text_length);
+
+// Toca som apenas quando uma nova letra aparece e o cooldown acabou
+if (floor(text_progress) > floor(last_sound_progress) && text_progress < text_length && sound_cooldown <= 0) {
+	var char = string_char_at(text, floor(text_progress));
+	// Não toca som para espaços e quebras de linha
+	if (char != " " && char != "\n") {
+		audio_play_sound(snd_duckbip, 0, false);
+		sound_cooldown = 3; // 3 frames de cooldown entre sons
+	}
+	last_sound_progress = text_progress;
+}
 
 // Ignore inputs when delay is active
 if (input_delay > 0) {

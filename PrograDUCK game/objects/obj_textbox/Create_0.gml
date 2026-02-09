@@ -54,6 +54,8 @@ current_action = -1;
 text = "";
 text_progress = 0;
 text_length = 0;
+last_sound_progress = 0; // Rastreia a última posição onde tocou o som
+sound_cooldown = 0; // Cooldown para não tocar som muito rápido
 
 portrait_sprite = -1;
 portrait_width = sprite_get_width(spr_portrait);
@@ -100,4 +102,5 @@ setText = function(newText) {
 	text = newText;
 	text_length = string_length(newText);
 	text_progress = 0;
+	last_sound_progress = 0; // Reseta o rastreamento de som
 }

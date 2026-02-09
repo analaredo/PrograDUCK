@@ -15,7 +15,6 @@ function type(x, y, text, progress, width) {
 	
 	for (var i = 1; i <= progress; i++) {
 		var char = string_char_at(text, i);
-	
 		// Handle normal line breaks
 		if (char == "\n") {
 			draw_x = 0;

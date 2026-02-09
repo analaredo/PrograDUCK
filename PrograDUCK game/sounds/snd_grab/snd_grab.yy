@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.430658,
+  "duration":0.4306576,
   "exportDir":"",
   "name":"snd_grab",
   "parent":{

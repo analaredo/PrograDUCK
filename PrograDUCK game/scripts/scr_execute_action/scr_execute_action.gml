@@ -15,6 +15,10 @@ function execute_action(action, target_param){
 			
 		 case scr_getfood:
 			scr_getfood();
+            break;
+			
+		 case scr_bite:
+			scr_bite();
             break;	
 		
 		 case scr_dresspajamas:

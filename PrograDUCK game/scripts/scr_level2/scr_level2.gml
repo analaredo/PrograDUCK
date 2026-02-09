@@ -35,8 +35,6 @@ function scr_level2(){
             is_executing = true;  // Marca que está executando
             var first_action = ds_queue_dequeue(action_queue);
             execute_action(first_action.action, first_action.target);
-        } else {
-           
         }
     }
 }

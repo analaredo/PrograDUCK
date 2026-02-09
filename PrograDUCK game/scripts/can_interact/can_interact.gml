@@ -11,6 +11,8 @@ function can_interact() {
     if (instance_exists(obj_levelmanager) && obj_levelmanager.is_executing) {
         return false;
     }
+	
+		
     
     // Permite interação se nenhuma condição bloqueante for verdadeira
     return true;

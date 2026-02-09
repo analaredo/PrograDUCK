@@ -67,7 +67,7 @@ if (state == DuckState.IDLE && current_action == noone && instance_exists(obj_le
             var next_action = ds_queue_dequeue(action_queue);
             execute_action(next_action.action, next_action.target);
         } else if (is_executing) {
-            // Se não há mais ações na queue, para a execução
+			script_verify();
             is_executing = false;
         }
     }

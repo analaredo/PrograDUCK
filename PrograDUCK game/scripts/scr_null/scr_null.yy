@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_null",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_null",
+  "parent":{
+    "name":"Motor",
+    "path":"folders/Scripts/Motor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -27,10 +27,10 @@ global.topics[$"ERROR_LOOPNEVEREXECUTES"] = [
 	GOTO("TRY_AGAIN")
 ];
 
-global.topics[$"ERROR_MISSINGCARDS"] = [
+global.topics[$"ERROR_WRONGCARDS"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Hmm... Acho que deixamos algum slot vazio..."),
-	TEXT("Preciso que você preencha todos os espaços com os cards!"),
+	TEXT("Hmm... Acho que tem algum CARD em algum lugar que não faz sentido ou está em branco..."),
+	TEXT("Não consegui entender as instruções."),
 ];
 
 global.topics[$"ERROR_TOOMANYBITES"] = [

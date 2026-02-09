@@ -6,6 +6,7 @@ scr_variables();
 num_fase = noone;
 slots = [];            
 script_fase = noone;
+script_verify = noone;
 inicio_fase = noone;
 help_fase = noone;
 is_executing = false;  // Controla se está executando ações

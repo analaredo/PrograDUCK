@@ -2,6 +2,7 @@
 face = FaceState.DOWN;
 state = DuckState.IDLE;
 clothes = ClothesState.NORMAL;
+initial_clothes = clothes;
 initial_x = x;
 initial_y = y;
 current_action = noone;
@@ -27,9 +28,16 @@ sprite[DuckState.WALK, FaceState.LEFT] = spr_duck_walk_left;
 sprite[DuckState.WALK, FaceState.UP] = spr_duck_walk_up;
 sprite[DuckState.WALK, FaceState.DOWN] = spr_duck_walk_down;
 
-// Sprites para o estado CONFUSED
+//CONFUSED
 sprite[DuckState.CONFUSED, FaceState.RIGHT] = spr_duck_confused_right;
 sprite[DuckState.CONFUSED, FaceState.LEFT] = spr_duck_confused_right;
 sprite[DuckState.CONFUSED, FaceState.UP] = spr_duck_confused_right;
 sprite[DuckState.CONFUSED, FaceState.DOWN] = spr_duck_confused_right;
+
+//EATING
+sprite[DuckState.EATING, FaceState.RIGHT] = spr_duck_idle_right;
+sprite[DuckState.EATING, FaceState.LEFT] = spr_duck_idle_left;
+sprite[DuckState.EATING, FaceState.UP] = spr_duck_idle_up;
+sprite[DuckState.EATING, FaceState.DOWN] = spr_duck_idle_down;
+
 

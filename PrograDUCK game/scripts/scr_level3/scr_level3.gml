@@ -5,11 +5,11 @@ function scr_level3(){
             action_queue = ds_queue_create();
         }
         
-        // Limpa a queue anterior
+       
         ds_queue_clear(action_queue);
-        // Pega os operadores escolhidos pelo jogador nos slots
-        var comparison_operator = ""; // slot da comparação (<=, >, !=, <);
-        var increment_operator = "";  // slot da operação (SOMAR, SUBTRAIR)
+      
+        var comparison_operator = ""; // (<=, >, !=, <);
+        var increment_operator = "";  // (SOMAR, SUBTRAIR)
         
         // Verifica se há pelo menos 2 slots
         if (array_length(slots) >= 2) {
@@ -18,9 +18,7 @@ function scr_level3(){
            
         }
         
-        // Debug: mostra os operadores para verificar (convertendo para string)
-        show_debug_message("Comparison: " + string(comparison_operator));
-        show_debug_message("Increment: " + string(increment_operator));
+     
         
         // Cria a combinação como string
         var combination = string(comparison_operator) + "_" + string(increment_operator);
@@ -30,26 +28,31 @@ function scr_level3(){
         loop_counter = 0;
         
         switch (combination) {
-            //SUCESSOS
+            
             case "<=_SOMAR":
-                loop_target = 5; // for (i = 1; i <= 5; i++) = 5 mordidas
-                loop_counter = 0;
-                alarm[0] = 30; // Inicia alarm para processar mordidas
+                // for (i = 0; i <= 5; i++) = 5 mordidas
+                for (var i = 0; i < 5; i++) {
+                    ds_queue_enqueue(action_queue, {action: scr_bite, target: noone});
+                }
+                is_executing = true;
                 return;
                 
             case "!=_SOMAR":
-                // for (i = 1; i != 5; i++) = 4 mordidas (para quando i == 5)
-                loop_target = 4;
-                loop_counter = 0;
-                alarm[0] = 30;
+                for (var i = 0; i != 5; i++) {
+                    ds_queue_enqueue(action_queue, {action: scr_bite, target: noone});
+                }
+                is_executing = true;
                 return;
                 
-            //QUASE CORRETO    
+         
             case "<_SOMAR":
-                loop_target = 4; // for (i = 1; i < 5; i++) = 4 mordidas
-                loop_counter = 0;
-                alarm[0] = 30;
+   
+                for (var i = 0; i < 5; i++) {
+                    ds_queue_enqueue(action_queue, {action: scr_bite, target: noone});
+                }
+                is_executing = true;
                 return;
+				
             //NÃO EXECUTA
             case ">_SUBTRAIR":
                 // Loop que nunca executa: for(i=1; i>5; i--)
@@ -97,7 +100,7 @@ function scr_level3(){
 
             default:
                 // Combinação não reconhecida
-                startDialogue($"ERROR_MISSINGCARDS");
+                startDialogue($"ERROR_WRONGCARDS");
                 scr_fail();
                 return;
         }

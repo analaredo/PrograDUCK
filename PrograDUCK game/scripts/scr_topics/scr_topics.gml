@@ -197,12 +197,13 @@ global.topics[$"INTRO_LEVEL4"] = [
 
 
 //-------SUCESSOS -------
-global.topics[$"SUCESS_LEVEL2"] = [
+global.topics[$"SUCCESS_LEVEL2"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Isso!"),
 	TEXT("Conseguimos preparar tudo corretamente!"),
 	TEXT("Parabéns, humano!"),
-	TEXT("Tenho uma dieta muito complicada, e preciso comer de um jeito especial...mas te explico melhor na próxima fase, até la!")
+	TEXT("Tenho uma dieta muito complicada, e preciso comer de um jeito especial...mas te explico melhor na próxima fase, até la!"),
+	ROOM_GOTO(rm_levels)
 ];
 
 global.topics[$"SUCCESS_LEVEL3"] = [	
@@ -211,9 +212,10 @@ global.topics[$"SUCCESS_LEVEL3"] = [
 	TEXT("Agora estou me sentindo ótimo!"),
 	TEXT("Vou ficar em forma assim! Bonitão para impressionar as patinhas!"),
 	TEXT("Obrigado por me ajudar a comer de forma saudável!"),
+	ROOM_GOTO(rm_levels)
 ];
 
-global.topics[$"SUCESS_LEVEL4"] = [
+global.topics[$"SUCCESS_LEVEL4"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Hmmm...Tudo certinho para dormir!"),
 	TEXT("Adorei o pijama quentinho!"),
@@ -232,6 +234,7 @@ global.topics[$"FINAL_DIALOGUE"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Obrigado por me ajudar a aprender! Espero te ver de novo em breve!"),
 	TEXT("Até a próxima aventura de programação!"),
+	ROOM_GOTO(menu)
 ];
 //-------AJUDA -------
 global.topics[$"HELP_LEVEL2"] = [

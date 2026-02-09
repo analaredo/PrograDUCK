@@ -1,2 +1,4 @@
-var completion_percentage = round((global.levelscompleted / array_length(global.levels)) * 100);
-text_content = $"Total de compleção: \n\n     {completion_percentage}%";
+stat_variable = "completion_percentage";
+stat_label = "Total de compleção:  ";
+stat_suffix = "%";
+update_dynamic = true;

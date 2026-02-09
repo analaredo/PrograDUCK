@@ -7,4 +7,5 @@ line_sep = 22;
 // Variáveis para controlar qual stat mostrar
 stat_variable = ""; // Nome da variável global (ex: "totalbites")
 stat_label = "";    // Label a ser mostrado (ex: "Mordidas: ")
+stat_suffix = "";   // Sufixo a ser mostrado após o valor (ex: "%")
 update_dynamic = true; // Se true, atualiza automaticamente

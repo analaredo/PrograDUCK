@@ -3,6 +3,7 @@
 #macro CHOICE new ChoiceAction
 #macro OPTION new OptionAction
 #macro GOTO new GotoAction
+#macro ROOM_GOTO new RoomGotoAction
 
 function DialogueAction() constructor {
 	act = function() { };
@@ -69,5 +70,15 @@ function GotoAction(_topic): DialogueAction() constructor {
 
 	act = function(textbox) {
 		textbox.setTopic(topic);
+	}
+}
+
+// Automatically go to a specified room after dialogue ends
+function RoomGotoAction(_room): DialogueAction() constructor {
+	room_target = _room;
+
+	act = function(textbox) {
+		room_goto(room_target);
+		instance_destroy(textbox);
 	}
 }

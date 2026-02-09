@@ -33,7 +33,7 @@ function scr_liedown(){
 				
 		state = DuckState.IDLE;
 		face = FaceState.DOWN;			
-		startDialogue($"SUCESS_LEVEL4");
+		scr_win();
 			
 		}		
 }

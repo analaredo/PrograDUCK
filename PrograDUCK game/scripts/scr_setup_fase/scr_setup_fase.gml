@@ -13,6 +13,7 @@ function scr_setup_fase(fase) {
 			script_verify = scr_null;
 			help_fase = $"HELP_LEVEL2";
 			inicio_fase = $"INTRO_LEVEL2";
+			sucess_dialogue = $"SUCCESS_LEVEL2";
         break;
 		
 		case 3:
@@ -20,13 +21,15 @@ function scr_setup_fase(fase) {
 			script_verify = scr_verify_level3;
 			help_fase = $"HELP_LEVEL3";
 			inicio_fase = $"INTRO_LEVEL3";
-        break;
+		sucess_dialogue = $"SUCCESS_LEVEL3";
+		break;
 		
-		case 4:
+	case 4:
             script_fase = scr_level4;
-			script_verify = scr_null;
+		script_verify = scr_null;
 			help_fase = $"HELP_LEVEL4";
 			inicio_fase = $"INTRO_LEVEL4";
+			sucess_dialogue = $"SUCCESS_LEVEL4";
         break;
     }
 }

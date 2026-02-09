@@ -80,6 +80,7 @@
     {"id":{"name":"obj_levels","path":"objects/obj_levels/obj_levels.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_resetbutton","path":"objects/obj_resetbutton/obj_resetbutton.yy",},},
+    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"obj_uibuttonparent","path":"objects/obj_uibuttonparent/obj_uibuttonparent.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},

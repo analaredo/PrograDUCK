@@ -16,7 +16,7 @@ function scr_switchlight(){
                     return;
                 }
         
-		var goal_obj = scr_verifyinstance("obj_dresser");
+		 goal_obj = scr_verifyinstance("obj_dresser");
          if (point_distance(x, y, goal_obj.x, goal_obj.y) >= spd)
                 {
                     startDialogue($"ERROR_FARFROMLAMP");
@@ -24,7 +24,7 @@ function scr_switchlight(){
                     return;
                 }
         
-		var goal_obj = scr_verifyinstance("obj_lamp");
+		 goal_obj = scr_verifyinstance("obj_lamp");
        goal_obj.state = SlotState.EMPTY 
       
         

@@ -1,1 +1,1 @@
-text_content =  "Enquanto o número \nde mordidas for:";
+text_content =  "Enquanto o número de mordidas for:";

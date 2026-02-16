@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":1,
-  "compression":3,
+  "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.52244896,
+  "duration":0.050340135,
   "exportDir":"",
   "name":"snd_duckbip",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":11025,
   "soundFile":"snd_duckbip.wav",
-  "volume":1.0,
+  "volume":0.33,
 }

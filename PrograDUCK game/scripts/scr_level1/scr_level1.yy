@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_level3old",
+  "%Name":"scr_level1",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_level3old",
+  "name":"scr_level1",
   "parent":{
     "name":"Scripts fases",
     "path":"folders/Scripts/Scripts fases.yy",

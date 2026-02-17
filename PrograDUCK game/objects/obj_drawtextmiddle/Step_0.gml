@@ -1,0 +1,1 @@
+draw_text_ext(x,y, text_content, line_sep, text_width);

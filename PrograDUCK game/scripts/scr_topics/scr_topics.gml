@@ -300,7 +300,7 @@ global.topics[$"FINAL_DIALOGUE"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Obrigado por me ajudar a aprender! Espero te ver de novo em breve!"),
 	TEXT("Até a próxima aventura de programação!"),
-	ROOM_GOTO(menu)
+	ROOM_GOTO(rm_end)
 ];
 //-------AJUDA -------
 

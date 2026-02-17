@@ -1,4 +1,4 @@
-// Atualiza o texto dinamicamente baseado no conteúdo inicial
+ // Atualiza o texto dinamicamente baseado no conteúdo inicial
 if (string_pos("dicas", text_content) > 0) {
     text_content = $"Total de dicas: \n\n     {global.totalhelp}";
 }

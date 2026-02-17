@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":11025,
   "soundFile":"snd_duckbip.wav",
-  "volume":0.33,
+  "volume":0.5,
 }

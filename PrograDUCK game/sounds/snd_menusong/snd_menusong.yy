@@ -1,18 +1,18 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_music",
+  "%Name":"snd_menusong",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":2,
-  "compression":1,
+  "channelFormat":0,
+  "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":77.12,
+  "duration":47.253334,
   "exportDir":"",
-  "name":"snd_music",
+  "name":"snd_menusong",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_music.mp3",
-  "volume":0.4,
+  "soundFile":"snd_menusong.mp3",
+  "volume":1.0,
 }

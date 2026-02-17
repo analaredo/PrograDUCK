@@ -129,6 +129,7 @@
     {"id":{"name":"snd_duckbip","path":"sounds/snd_duckbip/snd_duckbip.yy",},},
     {"id":{"name":"snd_fail","path":"sounds/snd_fail/snd_fail.yy",},},
     {"id":{"name":"snd_grab","path":"sounds/snd_grab/snd_grab.yy",},},
+    {"id":{"name":"snd_menusong","path":"sounds/snd_menusong/snd_menusong.yy",},},
     {"id":{"name":"snd_music","path":"sounds/snd_music/snd_music.yy",},},
     {"id":{"name":"snd_quack","path":"sounds/snd_quack/snd_quack.yy",},},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},},

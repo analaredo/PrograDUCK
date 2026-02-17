@@ -31,7 +31,7 @@ function scr_level3(){
             
             case "<=_SOMAR":
                 // for (i = 0; i <= 5; i++) = 5 mordidas
-                for (var i = 0; i < 5; i++) {
+                for (var i = 0; i <= 5; i++) {
                     ds_queue_enqueue(action_queue, {action: scr_bite, target: noone});
                 }
                 is_executing = true;

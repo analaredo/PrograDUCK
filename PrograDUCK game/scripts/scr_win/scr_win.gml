@@ -1,4 +1,5 @@
 function scr_win () {
+	
  with (obj_levelmanager){
 	 
 	 startDialogue(sucess_dialogue);
@@ -51,6 +52,6 @@ function scr_win () {
 		 
 	 }
  }
- 
+ audio_play_sound(snd_win,0, false);
 
 }

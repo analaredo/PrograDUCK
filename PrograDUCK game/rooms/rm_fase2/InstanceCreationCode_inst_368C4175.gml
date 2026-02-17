@@ -1,1 +1,1 @@
-text_content = ",                      ;";
+text_content = ",                       ;";

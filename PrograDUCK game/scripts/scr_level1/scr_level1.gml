@@ -51,9 +51,9 @@ function scr_level1(){
         }   
             
         switch (open_book) {
-            case "bool_falso":
+            case "bool_verdadeiro":
                 break; 
-             case "bool_verdadeiro":
+             case "bool_falso":
                 startDialogue("ERROR_RETELLSTORY");
                 scr_fail();
                 break;       
@@ -109,8 +109,8 @@ function scr_level1(){
         }
 
         // Verifica se todas as condições estão corretas para vitória
-        if (book_pages == "int_cinco" && open_book == "bool_falso" && var_type == "var_bool") {
-            startDialogue("SUCCESS_LEVEL1");
+        if (book_pages == "int_cinco" && open_book == "bool_verdadeiro" && var_type == "var_bool") {
+			startDialogue("SUCCESS_LEVEL1");
             scr_win();
         }
     }

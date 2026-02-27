@@ -208,6 +208,7 @@ global.topics[$"INTRO_OBJ1"] = [
 	TEXT("Quantas páginas eu li? O livro está aberto ou fechado?"),
 	TEXT("Que tipo de variável é melhor para guardar cada informação?"),
 	TEXT("Conto com você para me ajudar a organizar essas informações usando variáveis!"),
+	GOTO("HELP_TUTORIAL")
 
 ];
 
@@ -303,6 +304,23 @@ global.topics[$"FINAL_DIALOGUE"] = [
 	ROOM_GOTO(rm_end)
 ];
 //-------AJUDA -------
+
+global.topics[$"HELP_TUTORIAL"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Bem, antes de começarmos...gostaria de entender como jogar?"),
+	CHOICE("O que me diz", OPTION("Quero ver o tutorial", "HELP_HOWTOPLAY"), OPTION("Não", "INTRO_LEVEL1"))
+	
+];
+
+global.topics[$"HELP_HOWTOPLAY"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Claro! Vou te explicar como jogar!"),
+	TEXT("O objetivo do jogo é me ajudar a completar minhas tarefas diárias usando blocos de programação!"),
+	TEXT("Cada bloco representa uma ação ou um comando, e você precisa arrastá-los para os slots certos para me ajudar a completar as tarefas!"),
+	TEXT("Para arrastar os blocos para os slots, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o slot onde acha que ele deve ir, e soltar!"),
+	TEXT("Se precisar de ajuda, é só clicar no botão de ajuda para receber dicas e explicações sobre os conceitos de programação envolvidos!"),
+	TEXT("Vamos começar nossa aventura de programação?")
+]
 
 global.topics[$"HELP_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),

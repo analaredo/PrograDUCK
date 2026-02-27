@@ -1,4 +1,4 @@
-
+ 
 // Executa o setup da fase uma vez que num_fase estiver definido
 if (!fase_setup_done && num_fase != noone) {
     scr_setup_fase(num_fase);
@@ -8,7 +8,7 @@ if (!fase_setup_done && num_fase != noone) {
 
 startDialogue(inicio_fase);
 
-if (room == menu || room == rm_levels || room == rm_stats) {
+if (room != rm_fase1 ||room != rm_fase2 ||room != rm_fase3|| room != rm_fase4) {
 	audio_stop_sound(snd_music);
 	if (!audio_is_playing(snd_menusong)) {
 		audio_play_sound(snd_menusong,0,true);

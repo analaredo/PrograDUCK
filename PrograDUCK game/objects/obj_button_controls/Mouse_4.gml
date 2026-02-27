@@ -1,5 +1,5 @@
  // Inherit the parent event
 event_inherited();
 
-scr_win();
+room_goto(rm_controls);
 

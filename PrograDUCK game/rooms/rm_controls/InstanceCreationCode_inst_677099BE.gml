@@ -1,0 +1,1 @@
+text_content = "Use o MOUSE para arrastar os blocos";

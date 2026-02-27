@@ -1,0 +1,1 @@
+text_content = "Use a tecla ENTER para avançar pelos diálogos";

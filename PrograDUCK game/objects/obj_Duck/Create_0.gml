@@ -1,6 +1,7 @@
 //INICIALIZAÇÃO DE ESTADOS BASICOS
 face = FaceState.DOWN;
 state = DuckState.IDLE;
+tone = 0;
 clothes = ClothesState.NORMAL;
 initial_clothes = clothes;
 initial_x = x;

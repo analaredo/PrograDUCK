@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_button_stats",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonparent","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"estatísticas",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonparent","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Estatísticas",},
   ],
   "parent":{
     "name":"Buttons",

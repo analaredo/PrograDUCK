@@ -16,7 +16,7 @@ function scr_walk(target_param) {
         with (obj_duck) {
             scr_fail ();
         }
-        show_debug_message("Target inválido para WALK - setando DuckState.CONFUSED: " + string(target_param));
+
         return false;
     }
 
@@ -28,7 +28,7 @@ function scr_walk(target_param) {
        
     }
 
-    show_debug_message("Executando ação: WALK para " + string(target_obj));
+ 
     return true;
 }
 /// @function walk()

@@ -2,6 +2,19 @@
 // Creates a textbox and starts a conversation.
 // @param topic - What topic the dialogue box should use
 function startDialogue(topic) {
+	if (is_undefined(topic) || topic == noone) {
+		return;
+	}
+
+	if (!variable_global_exists("topics") || is_undefined(global.topics)) {
+		return;
+	}
+
+	var topic_key = string(topic);
+	if (!variable_struct_exists(global.topics, topic_key)) {
+		return;
+	}
+
 	if (instance_exists(obj_textbox))
 		return;
 		

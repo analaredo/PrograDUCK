@@ -13,6 +13,7 @@
     {"name":"inst_69DF377E","path":"rooms/rm_end/rm_end.yy",},
     {"name":"inst_47D4DE0E","path":"rooms/rm_end/rm_end.yy",},
     {"name":"inst_14E698E2","path":"rooms/rm_end/rm_end.yy",},
+    {"name":"inst_92D4538","path":"rooms/rm_end/rm_end.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -21,6 +22,7 @@
         {"$GMRInstance":"v4","%Name":"inst_14E698E2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14E698E2","objectId":{"name":"obj_button_menu","path":"objects/obj_button_menu/obj_button_menu.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonparent","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttonparent/obj_buttonparent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Menu",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":384.0,"y":288.0,},
+        {"$GMRInstance":"v4","%Name":"inst_92D4538","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_92D4538","objectId":{"name":"obj_drawtext","path":"objects/obj_drawtext/obj_drawtext.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":192.0,},
       ],"layers":[],"name":"Text","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"UI","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_120A97C5_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_120A97C5_1","path":"rooms/menu/menu.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_120A97C5_1_1_1","objectId":{"name":"obj_cursormanager","path":"objects/obj_cursormanager/obj_cursormanager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":948.0,"y":167.0,},

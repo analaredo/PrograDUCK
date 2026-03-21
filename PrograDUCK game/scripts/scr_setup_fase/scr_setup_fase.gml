@@ -1,6 +1,11 @@
 
 function scr_setup_fase(fase) {
     switch (fase) {
+		case 0:
+            script_fase = scr_tutorial;
+			help_fase = $"HELP_TUTORIAL";
+			inicio_fase = $"INTRO_TUTORIAL";
+        break;
 		  
         case 1:
              script_fase = scr_level1;

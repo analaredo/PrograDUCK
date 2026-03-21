@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_duckappearence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_duckappearence",
+  "parent":{
+    "name":"Interface",
+    "path":"folders/Scripts/Interface.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

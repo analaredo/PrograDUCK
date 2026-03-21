@@ -9,20 +9,24 @@ function scr_win () {
 	 var current_level_index = -1;
 	 
 	 switch(room) {
+		 case rm_tutorial:
+			 current_level_index = 0; // Fase 0
+			 room_index = 1; // Libera fase 1 (índice 1)
+			 break;
 		 case rm_fase1:
-			 current_level_index = 0; // Fase 1
-			 room_index = 1; // Libera fase 2 (índice 1)
+			 current_level_index = 1; // Fase 1
+			 room_index = 2; // Libera fase 2 (índice 1)
 			 break;
 		 case rm_fase2:
-			 current_level_index = 1; // Fase 2
-			 room_index = 2; // Libera fase 3 (índice 2)
+			 current_level_index = 2; // Fase 2
+			 room_index = 3; // Libera fase 3 (índice 2)
 			 break;
 		 case rm_fase3:
-			 current_level_index = 2; // Fase 3
-			 room_index = 3; // Libera fase 4 (índice 3)
+			 current_level_index = 3; // Fase 3
+			 room_index = 4; // Libera fase 4 (índice 3)
 			 break;
 		 case rm_fase4:
-			 current_level_index = 3; // Fase 4
+			 current_level_index = 4; // Fase 4
 			 room_index = -1; // Última fase
 			 break;
 		 default:

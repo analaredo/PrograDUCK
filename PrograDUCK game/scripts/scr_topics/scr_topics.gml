@@ -1,6 +1,16 @@
 global.topics = {};
 
 //-------ERROS -------
+
+global.topics[$"ERROR_WRONGCARDCOLOR"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Hmm... Acho que esse CARD não é da cor que as intruções pedem..."),
+	TEXT("Lembre-se, o CARD laranja e o CARD azul vão para os slots dados no enunciado!"),
+	GOTO("TRY_AGAIN")	
+
+];
+
+
 global.topics[$"ERROR_UNRELATEDCARD"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Hmm... Acho que esse CARD não tem nada a ver com o que estamos tentando fazer..."),
@@ -183,33 +193,29 @@ global.topics[$"TRY_AGAIN"] = [
 
 
 //-------INTROS -------
-global.topics[$"INTRO_LEVEL1"] = [
+global.topics[$"INTRO_TUTORIAL"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Olá! Eu sou o DUCK! Bem-vindo ao mundo da programação!"),
-	TEXT("Hoje vamos aprender sobre algo muito importante: as VARIÁVEIS!"),
-	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Variáveis são como caixinhas que guardam informações importantes..."),
-	TEXT("Por exemplo: meu nome, seu nome, se o pote está cheio ou vazio..."),
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	CHOICE("Gostaria de saber mais sobre variáveis antes, ou começar a jogar?", OPTION("Saber mais", "HELP_VARS1"), OPTION("Começar a jogar", "INTRO_OBJ1"))
+	TEXT("Olá! Eu sou o DUCK! Bem-vindo ao mundo da programação! Para avançar pelas minhas falas, aperte a tecla ENTER!"),
+	TEXT("O objetivo do jogo é me ajudar a completar minhas tarefas diárias usando blocos de programação!"),
+	TEXT("Cada bloco representa uma ação ou um comando, e você precisa arrastá-los para os slots certos para me ajudar a completar as tarefas!"),
+	TEXT("Para arrastar os blocos para os slots, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o slot onde acha que ele deve ir, e soltar!"),
+	TEXT("As instruções para completar essa fase já estão na tela, mas se precisar de ajuda, é só clicar no botão de ajuda para receber dicas!"),
+	
 	
 ];
 
-global.topics[$"INTRO_OBJ1"] = [
+global.topics[$"INTRO_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Bem, para testar seu conhecimento sobre variáveis, vou te dar um desafio!"),
-	TEXT("Vou te contar um pouco sobre minha rotina, e quero que me ajude a organizar as informações usando variáveis!"),
+	TEXT("Ah, oi! Você está aqui, que bom! Estou precisando da sua ajuda..."),
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Eu acordei hoje e comecei a ler um livro... mas meus óculos estão meio sujos, e não consigo ler direito..."),
+	TEXT("Eu acordei hoje e comecei a ler um livro... mas perdi meus óculos, e não consigo ler direito..."),
 	TEXT("Assim, eu li apenas CINCO páginas."),
 	TEXT("Depois, desisti de ler e deixei o livro ABERTO..."),
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Então, consegue preencher as lacunas com base no que te contei?"),
+	TEXT("Será que você consegue me ajudar a organizar essas informações usando variáveis?"),
 	TEXT("Quantas páginas eu li? O livro está aberto ou fechado?"),
 	TEXT("Que tipo de variável é melhor para guardar cada informação?"),
-	TEXT("Conto com você para me ajudar a organizar essas informações usando variáveis!"),
-	GOTO("HELP_TUTORIAL")
-
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	CHOICE("Gostaria de saber mais sobre variáveis antes, ou começar a jogar?", OPTION("Saber mais", "HELP_VARS"), OPTION("Começar a jogar", ""))
 ];
 
 global.topics[$"INTRO_LEVEL2"] = [
@@ -252,13 +258,24 @@ global.topics[$"INTRO_LEVEL4"] = [
 
 //-------SUCESSOS -------
 
+global.topics[$"SUCCESS_TUTORIAL"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Parabéns! Você completou a fase tutorial!"),
+	TEXT("Viu como é importante prestar atenção nos detalhes para escolher os blocos certos?"),
+	TEXT("Com a prática, isso vai ficando mais fácil!"),
+	TEXT("Agora que você entendeu a mecânica do jogo, vamos para a próxima fase?"),
+	TEXT("Te vejo lá!"),
+	ROOM_GOTO(rm_levels)
+];
+
+
 global.topics[$"SUCCESS_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Isso! Você organizou as informações direitinho usando variáveis!"),
 	TEXT("Viu como é importante escolher o tipo certo de variável para cada informação?"),
 	TEXT("Assim, meu programa funciona direitinho e sem erros!"),
 	TEXT("Parabéns por completar a fase 1! Vejo muito potencial em você! "),
-	TEXT("Hmm, que péssimo anfitrião eu fui! Que tal me acompanhar para a cozinha para preparar minha comidinha?"),
+	TEXT("Hmm, estou com fome... Será que você pode me ajudar a preparar minha comida na próxima fase? Vou para a cozinha!"),
 	TEXT("Te vejo lá!"),
 	ROOM_GOTO(rm_levels)
 ];
@@ -307,20 +324,10 @@ global.topics[$"FINAL_DIALOGUE"] = [
 
 global.topics[$"HELP_TUTORIAL"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Bem, antes de começarmos...gostaria de entender como jogar?"),
-	CHOICE("O que me diz", OPTION("Quero ver o tutorial", "HELP_HOWTOPLAY"), OPTION("Não", "INTRO_LEVEL1"))
+	TEXT("Bem, com tantas informações novas, é normal ter dúvidas no começo! Com o que posso te ajudar?"),
+	CHOICE("O que me diz", OPTION("Controles", "HELP_HOWTOPLAY"), OPTION("Objetivo da fase", "HELP_OBJTUTORIAL"))
 	
 ];
-
-global.topics[$"HELP_HOWTOPLAY"] = [
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Claro! Vou te explicar como jogar!"),
-	TEXT("O objetivo do jogo é me ajudar a completar minhas tarefas diárias usando blocos de programação!"),
-	TEXT("Cada bloco representa uma ação ou um comando, e você precisa arrastá-los para os slots certos para me ajudar a completar as tarefas!"),
-	TEXT("Para arrastar os blocos para os slots, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o slot onde acha que ele deve ir, e soltar!"),
-	TEXT("Se precisar de ajuda, é só clicar no botão de ajuda para receber dicas e explicações sobre os conceitos de programação envolvidos!"),
-	TEXT("Vamos começar nossa aventura de programação?")
-]
 
 global.topics[$"HELP_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
@@ -349,6 +356,19 @@ global.topics[$"HELP_LEVEL4"] = [
 	CHOICE("Com o que posso te ajudar?", OPTION("Funções", "HELP_FUNCOES"), OPTION("Objetivo da fase", "HELP_OBJLEVEL4"))
 ];
 
+global.topics[$"HELP_OBJTUTORIAL"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("O objetivo dessa fase é arrastar o card certo para o slot certo!"),
+	TEXT("Temos um card laranja e um card azul, o texto na tela indica onde colocar cada um!")
+];	
+
+global.topics[$"HELP_HOWTOPLAY"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Para arrastar os blocos para os slots, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o slot onde acha que ele deve ir, e soltar!"),
+	TEXT("Quando colocar os blocos nos slots, é só clicar no botão de 'Executar' para ver o resultado!"),
+	TEXT("Caso ache que preencheu errado, clique no botão de resetar para tentar de novo!"),
+	TEXT("Se precisar de mais ajuda, é só clicar nesse botão de ajuda de novo para revisar as instruções!")
+];
 
 global.topics[$"HELP_OBJLEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
@@ -463,23 +483,7 @@ global.topics[$"HELP_CONDICIONAIS"] = [
 ];
 
 
-global.topics[$"HELP_VARS1"] = [
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Claro! Variáveis são super importantes na programação!"),
-	TEXT("Existem diferentes TIPOS de variáveis. Deixe-me te explicar os principais:"),
-	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("STRING (texto): Guarda palavras entre aspas, como 'nome = \"Ana\"' ou 'cor = \"azul\"'"),
-	TEXT("NÚMERO: Guarda valores matemáticos, como 'idade = 15' ou 'pontos = 100'"),
-	TEXT("BOOLEAN: Guarda apenas VERDADEIRO ou FALSO, como 'tem_fome = verdadeiro' ou  'livro_aberto = falso'"),
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Aqui está a diferença importante: 5 é diferente \"cinco\""),
-	TEXT("O número 5 pode ser usado em cálculos: 5 + 3 = 8"),
-	TEXT("Mas \"cinco\" é apenas texto! Não dá para somar: \"cinco\" + 3 = erro!"),
-	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Por isso é importante escolher o tipo certo de variável!"),
-	TEXT("Assim, seu programa funciona direitinho e sem erros!"),
-	GOTO("INTRO_OBJ1")
-];
+
 
 
 global.topics[$"HELP_VARS"] = [

@@ -10,8 +10,8 @@ global.duck_green = #c6c127;
 global.duck_pink = #ffa5a3;
 
 //SELETOR DE NIVEIS
-global.levels = [1,1,1,1,1] // 0 = bloqueada, 1 = liberada
-//global.levels = [1,0,0,0,0] // 0 = bloqueada, 1 = liberada
+//global.levels = [1,1,0,0,0] // 0 = bloqueada, 1 = liberada
+global.levels = [1,0,0,0,0] // 0 = bloqueada, 1 = liberada
 global.levels_completed = [0,0,0,0, 0]; // 0 = não completada, 1 = completada
 
 

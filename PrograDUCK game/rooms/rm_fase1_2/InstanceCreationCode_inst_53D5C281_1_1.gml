@@ -1,1 +1,2 @@
-text_content =  "livro_aberto = ";
+text_content =  "ceu_eh_azul = true;";
+text_width =300;

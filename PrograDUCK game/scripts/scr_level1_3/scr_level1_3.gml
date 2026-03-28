@@ -1,4 +1,4 @@
-function scr_level1(){
+function scr_level1_3(){
     with (obj_levelmanager) {
        
         if (!variable_instance_exists(id, "action_queue")) {
@@ -110,7 +110,6 @@ function scr_level1(){
 
         // Verifica se todas as condições estão corretas para vitória
         if (book_pages == "int_cinco" && open_book == "bool_verdadeiro" && var_type == "var_bool") {
-			startDialogue("SUCCESS_LEVEL1");
             scr_win();
         }
     }

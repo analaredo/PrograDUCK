@@ -1,1 +1,2 @@
-text_content =  " 'livro_aberto' é uma variável do tipo:";
+text_content =  " palavra_educada = \"obrigado\"";
+text_width =300;

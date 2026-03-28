@@ -1,4 +1,6 @@
 function scr_createslots(){
+		// Reconstrói o array toda vez para evitar slots duplicados.
+		slots = [];
 	
 		// Conta quantos obj_cardslot existem
 		var slot_count = instance_number(obj_cardslot);
@@ -10,4 +12,5 @@ function scr_createslots(){
 		        array_push(slots, slot_id);
 		    }
 		}
+
 }	

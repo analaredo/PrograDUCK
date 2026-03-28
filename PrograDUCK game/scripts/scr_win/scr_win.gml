@@ -13,16 +13,24 @@ function scr_win () {
 			 current_level_index = 0; // Fase 0
 			 room_index = 1; // Libera fase 1 (índice 1)
 			 break;
-		 case rm_fase1:
-			 current_level_index = 1; // Fase 1
-			 room_index = 2; // Libera fase 2 (índice 1)
-			 break;
+		 
 			 
 		 case rm_fase1_1:
-			current_level_index = 0; // Fase 0
+			current_level_index = -1; // Fase 0
 			 room_index = 1; // Libera subfase 2 (índice 1)	
 			 level_type = "sublevel1";
 			 break;
+			 
+		case rm_fase1_2:
+			current_level_index = -1; // Fase 1
+			 room_index = 2; // Libera subfase 3 (índice 2)	
+			 level_type = "sublevel1";
+			 break;
+			 
+		case rm_fase1_3:
+			 current_level_index = 1; // Fase 1
+			 room_index = 2; // Libera fase 2 (índice 1)
+			 break;	 
 			 
 		 case rm_fase2:
 			 current_level_index = 2; // Fase 2

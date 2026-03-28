@@ -1,2 +1,2 @@
- card_action = "bool_falso";
- card_text = "Falso";
+card_action = "var_string";
+card_text = "String";

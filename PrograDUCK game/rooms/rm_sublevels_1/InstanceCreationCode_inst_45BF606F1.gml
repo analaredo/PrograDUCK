@@ -1,1 +1,0 @@
-status = global.sublevels1[num_level];

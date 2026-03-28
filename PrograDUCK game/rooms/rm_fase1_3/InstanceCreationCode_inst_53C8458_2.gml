@@ -1,0 +1,1 @@
+text_content =  "paginas_lidas = ";

@@ -1,0 +1,1 @@
+text_content =  " 'livro_aberto' é uma variável do tipo:";

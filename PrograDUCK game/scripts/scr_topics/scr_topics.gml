@@ -204,6 +204,20 @@ global.topics[$"INTRO_TUTORIAL"] = [
 	
 ];
 
+global.topics[$"INTRO_SUBLEVEL1_1"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Ah, oi! Você está aqui, que bom! Bem a tempo da nossa aula sobre VARIÁVEIS!"),
+	TEXT("Variáveis são como caixinhas onde guardamos informações importantes para o nosso programa funcionar!"),
+	TEXT("Existem diferentes tipos de variáveis, e cada tipo é melhor para guardar um tipo diferente de informação!"),
+	TEXT("Vamos aprender os tipos principais de variáveis e para que servem?"),
+	CHOICE("Gostaria de aprender sobre variáveis ou já começar a jogar?", OPTION("Aprender sobre variáveis", "HELP_VARS"), OPTION("Começar a jogar", ""))
+	
+];
+
+
+
+
+
 global.topics[$"INTRO_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Ah, oi! Você está aqui, que bom! Estou precisando da sua ajuda..."),
@@ -269,7 +283,16 @@ global.topics[$"SUCCESS_TUTORIAL"] = [
 ];
 
 
-global.topics[$"SUCCESS_LEVEL1"] = [
+global.topics[$"SUCCESS_SUBLEVEL1_1"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Parabéns! Você entendeu completamente as variáveis e seus tipos!"),
+	TEXT("Vamos continuar nosso estudo sobre variáveis?"),
+	TEXT("Te vejo na próxima fase!"),
+	ROOM_GOTO(rm_sublevels_1)
+];
+
+
+global.topics[$"SUCCESS_LEVEL1_3"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Isso! Você organizou as informações direitinho usando variáveis!"),
 	TEXT("Viu como é importante escolher o tipo certo de variável para cada informação?"),
@@ -329,6 +352,13 @@ global.topics[$"HELP_TUTORIAL"] = [
 	
 ];
 
+global.topics[$"HELP_SUBLEVEL1_1"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Está com dúvidas? Sem problemas!"),
+	CHOICE("Com o que posso te ajudar?", OPTION("Variáveis", "HELP_VARS"), OPTION("Objetivo da fase", "HELP_OBJSUBLEVEL1_1"))
+];
+
+
 global.topics[$"HELP_LEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Está com dúvidas? Sem problemas!"),
@@ -369,6 +399,15 @@ global.topics[$"HELP_HOWTOPLAY"] = [
 	TEXT("Caso ache que preencheu errado, clique no botão de resetar para tentar de novo!"),
 	TEXT("Se precisar de mais ajuda, é só clicar nesse botão de ajuda de novo para revisar as instruções!")
 ];
+
+global.topics[$"HELP_OBJSUBLEVEL1_1"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("O objetivo dessa fase é me ajudar a organizar as informações usando variáveis!"),
+	TEXT("Eu expliquei os principais tipos de variáveis para você, e agora quero ver se consegue escolher o tipo certo de variável para cada informação!"),
+	TEXT("Caso não se lembre, escolha a opção de ajuda sobre variáveis para revisar as informações!"),
+	TEXT("Boa sorte! Tenho certeza que você consegue!")
+];
+
 
 global.topics[$"HELP_OBJLEVEL1"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),

@@ -1,5 +1,6 @@
-// Inherit the parent event
+ // Inherit the parent event
 event_inherited();
-status = global.gamecompleted;
+//status = global.gamecompleted;
+status = true;
 
 

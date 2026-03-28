@@ -1,0 +1,1 @@
+text_content =  "Que tipo de variável usamos para:";

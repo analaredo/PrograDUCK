@@ -13,6 +13,14 @@ function scr_setup_fase(fase) {
 			inicio_fase = $"INTRO_LEVEL1";
         break;
 
+		case 1.1:
+            script_fase = scr_level1_1;
+			script_verify = scr_null;
+			help_fase = $"HELP_SUBLEVEL1_1";
+			inicio_fase = $"INTRO_SUBLEVEL1_1";
+			sucess_dialogue = $"SUCCESS_SUBLEVEL1_1";
+        break;
+
         case 2:
             script_fase = scr_level2;
 			script_verify = scr_null;

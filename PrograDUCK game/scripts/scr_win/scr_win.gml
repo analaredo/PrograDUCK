@@ -4,7 +4,7 @@ function scr_win () {
 	 
 	 startDialogue(sucess_dialogue);
 	 
-	 
+	 var level_type = "level";
 	 var room_index = -1;
 	 var current_level_index = -1;
 	 
@@ -17,6 +17,13 @@ function scr_win () {
 			 current_level_index = 1; // Fase 1
 			 room_index = 2; // Libera fase 2 (índice 1)
 			 break;
+			 
+		 case rm_fase1_1:
+			current_level_index = 0; // Fase 0
+			 room_index = 1; // Libera subfase 2 (índice 1)	
+			 level_type = "sublevel1";
+			 break;
+			 
 		 case rm_fase2:
 			 current_level_index = 2; // Fase 2
 			 room_index = 3; // Libera fase 3 (índice 2)
@@ -51,8 +58,19 @@ function scr_win () {
 	 }
 	 
 	 // Libera a próxima fase se ela existir
-	 if (room_index != -1 && room_index < array_length(global.levels)) {
-		 global.levels[room_index] = 1;
+	 switch (level_type){
+		 
+		 case "level":
+		 if (room_index != -1 && room_index < array_length(global.levels)) {
+			 global.levels[room_index] = 1;
+		 }
+		 break;
+		 
+		 case "sublevel1":
+		 if (room_index != -1 && room_index < array_length(global.sublevels1)) {
+			 global.sublevels1[room_index] = 1;
+		 }
+		 break;
 		 
 	 }
  }

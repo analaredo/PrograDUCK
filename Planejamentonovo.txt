@@ -18,6 +18,36 @@ Depois disso, o jogador define:
 pote = _____________ (vazio ou cheio)
 
 
+
+
+SUB FASE 1: TIPOS DE VARIAVEIS,
+O pato aprende que existem diferentes tipos de variáveis para guardar diferentes tipos de informações.
+
+LACUNAS:
+PARA REPRESENTAR NUMEROS USAMOS: _____________ (variável numérica)
+PARA REPRESENTAR PALAVRAS USAMOS: _____________ (variável de texto)
+PARA REPRESENTAR VERDADEIRO OU FALSO USAMOS: _____________ (variável booleana)
+
+
+SUB FASE 2: VARIÁVEIS DE ESTADO,    
+O pato aprende que variáveis podem guardar o estado atual de algo, como o estado do pote.
+LACUNAS:
+pote = _____________ (vazio ou cheio)
+cor do pato = _____________ (amarelo, verde, etc.)
+
+SUB FASE 3: CLASSIFICAÇÃO DE VARIAVEIS,
+O pato vê tipos de variaveis e precisa classificar as variáveis que ele tem.
+LACUNAS:
+______ a = 5 (inteiro)
+______ b = "Olá" (texto)
+______ c = True (booleano)
+
+sub fase 4: Juntando tudo,
+O pato precisa usar variáveis para criar uma história interativa,, onde ele conta uma história e o jogador responde, e o pato guarda as respostas em variáveis para usar depois.
+paginas_lidas = 5 (inteir))
+
+
+
 Conceito-chave:
 Variáveis armazenam informações que mudam com o tempo.
 

@@ -1,4 +1,4 @@
-function scr_level2_1(){
+function scr_level2_2(){
     with (obj_gamemanager) {
      
         /*
@@ -8,18 +8,17 @@ function scr_level2_1(){
         FRASE4:SE abrir aplicativo ENTÃO não abrir aplicativo
 
         */
-        if (array_length(slots) >= 4) {
+        if (array_length(slots) >= 3) {
                 slot0 = slots[0].card_action;
                 slot1 = slots[1].card_action;
                 slot2 = slots[2].card_action;
-				slot3 = slots[3].card_action;
            
         }
             
        
         switch (slot0) {
             case 0:
-                startDialogue("2_1_ERRORSENTENCE1");
+                startDialogue("2_2_ERRORSENTENCE1");
                 scr_fail();
                 break;
             case 1:
@@ -32,10 +31,10 @@ function scr_level2_1(){
 
         switch (slot1) {
             case 0:
+                startDialogue("2_2_ERRORSENTENCE2");
+                scr_fail();
                 break;
             case 1:
-                startDialogue("2_1_ERRORSENTENCE2");
-                scr_fail();
                 break;
             default:
 			 startDialogue($"ERROR_EMPTYSLOT");
@@ -44,33 +43,21 @@ function scr_level2_1(){
         }
         switch (slot2) {
             case 0:
-                startDialogue("2_1_ERRORSENTENCE3");
-                scr_fail();
                 break;
             case 1:
-                break;
-            default:
-			 startDialogue($"ERROR_EMPTYSLOT");
-			 break;    
-        }
-        switch (slot3) {
-            case 0:
-            
-                break;
-            case 1:
-                startDialogue("2_1_ERRORSENTENCE4");
+                startDialogue("2_2_ERRORSENTENCE3");
                 scr_fail();
                 break;
             default:
 			 startDialogue($"ERROR_EMPTYSLOT");
 			 break;    
-
         }
+        
             
         
 
         // Verifica se todas as condições estão corretas para vitória
-        if (slot0 == 1 && slot1 == 0 && slot2 == 1 && slot3 == 0) {
+        if (slot0 == 1 && slot1 == 1 && slot2 == 0 ) {
             scr_win();
         }
     }

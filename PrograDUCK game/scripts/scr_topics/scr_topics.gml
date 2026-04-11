@@ -191,14 +191,14 @@ global.topics[$"TRY_AGAIN"] = [
 	
 ];
 
-global.topics[$"ERROR_ERRORSENTENCE1"] = [
+global.topics[$"2_1_ERRORSENTENCE1"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Hmm, a frase 1 parece estar correta..."),
 	TEXT("Se estou cansado, faz sentido dormir, né?"),
 	TEXT("A condição leva a uma ação coerente."),
 	TEXT("Talvez valha a pena revisar essa classificação!")
 ];
-global.topics[$"ERROR_ERRORSENTENCE2"] = [
+global.topics[$"2_1_ERRORSENTENCE2"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Hmm... meu instinto de pato tá achando isso estranho, a frase 2 parece estar errada..."),
 	TEXT("Se gosta de dormir no escuro... por que acender a luz?"),
@@ -206,7 +206,7 @@ global.topics[$"ERROR_ERRORSENTENCE2"] = [
 	TEXT("Que tal tentar de novo?")
 ];
 
-global.topics[$"ERROR_ERRORSENTENCE3"] = [
+global.topics[$"2_1_ERRORSENTENCE3"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Hmm, a frase 3 parece estar correta..."),
 	TEXT("Se sentir frio, vestir um casaco é uma resposta lógica."),
@@ -214,7 +214,7 @@ global.topics[$"ERROR_ERRORSENTENCE3"] = [
 	TEXT("Que tal revisar essa escolha?")
 ];
 
-global.topics[$"ERROR_ERRORSENTENCE4"] = [
+global.topics[$"2_1_ERRORSENTENCE4"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Acho que na frase 4 tem um probleminha..."),
 	TEXT("Abrir o aplicativo e não abrir ao mesmo tempo não dá, né?"),
@@ -222,6 +222,32 @@ global.topics[$"ERROR_ERRORSENTENCE4"] = [
 	TEXT("Em lógica, isso não funciona muito bem! Ela não deveria ser considerada uma condicional válida!"),
 ];
 
+
+global.topics[$"2_2_ERRORSENTENCE1"] = [
+    SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+    TEXT("Hmm... acho que você marcou a primeira frase incorretamente!"),
+    TEXT("Pense bem: se chover, levar guarda-chuva faz sentido."),
+    TEXT("E se NÃO chover, sair normalmente também faz sentido."),
+    TEXT("Ou seja, a condicional inteira está coerente!"),
+    TEXT("Tente revisar sua escolha!")
+];
+
+global.topics[$"2_2_ERRORSENTENCE2"] = [
+    SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+    TEXT("Ops! Parece que a segunda frase foi marcada errado."),
+    TEXT("Se está com frio, vestir casaco é lógico."),
+    TEXT("E se NÃO está com frio, usar roupa leve também faz sentido."),
+    TEXT("Então a condicional está correta como um todo!"),
+    TEXT("Dá mais uma olhada!")
+];
+
+global.topics[$"2_2_ERRORSENTENCE3"] = [
+    SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+    TEXT("Hmm... essa terceira marcação está estranha!"),
+    TEXT("Se NÃO tem dinheiro... faz sentido comprar mesmo assim?"),
+    TEXT("Aqui o problema está no 'SENÃO', que contradiz a situação."),
+    TEXT("Reveja se ela é realmente verdadeira ou falsa.")
+];
 
 //-------INTROS -------
 global.topics[$"INTRO_TUTORIAL"] = [
@@ -284,16 +310,25 @@ global.topics[$"INTRO_SUBLEVEL2_1"] =[
 	TEXT("Acredito em você! Se precisar de uma ajudinha extra, clique na opção de ajuda para receber dicas!")
 ]
 
+global.topics[$"INTRO_SUBLEVEL2_2"] =[
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Bem, na última fase vimos como prosseguir quando a condição da condicional é verdadeira, mas e quando ela é falsa?"),
+	TEXT("Aí entra o SENÃO! Ele é usado para dizer o que deve acontecer quando a condição é falsa!"),
+	TEXT("Por exemplo: SE tiver comida ENTÃO comer SENÃO ir ao mercado."),
+	TEXT("Isso significa que se tiver comida, eu como, mas se NÃO tiver comida, eu vou ao mercado!"),
+	TEXT("Nessa fase, vou te dar algumas declarações, e você deve marcar se são válidas!"),
+	TEXT("Acredito em você! Se precisar de uma ajudinha extra, clique na opção de ajuda para receber dicas!")
+]
+
 global.topics[$"INTRO_LEVEL2"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Olá, de novo! Depois de aprender sobre variáveis, bateu uma fominha..."),
+	TEXT("Olá, de novo! Agora que você já domina as condicionais, preciso da sua ajuda para preparar minha comida!"),
 	TEXT("Preciso comer, mas tem um probleminha..."),
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Algumas ações só funcionam em certas situações!"),
-	TEXT("Por exemplo: só posso comer SE o pote tiver comida."),
-	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
-	TEXT("Isso se chama CONDICIONAIS! Legal, né?"),
-	TEXT("Vamos descobrir juntos a ordem certa dos blocos!")
+	TEXT("Por exemplo: só posso comer SE estiver perto do pote com comida."),
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),,
+	TEXT("Vamos descobrir juntos a ordem certa dos blocos! Se precisar de uma ajudinha extra, clique na opção de ajuda para receber dicas!")
 ];
 
 global.topics[$"INTRO_LEVEL3"] = [
@@ -400,6 +435,16 @@ global.topics[$"SUCCESS_SUBLEVEL2_1"] = [
 	TEXT("Te vejo lá!"),
 	ROOM_GOTO(rm_sublevels_2)
 ];
+
+global.topics[$"SUCCESS_SUBLEVEL2_2"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Perfeito! Você entendeu muito bem como o SENÃO funciona nas condicionais!"),
+	TEXT("Agora você já sabe decidir o que acontece quando a condição é verdadeira e também quando ela é falsa!"),
+	TEXT("Isso deixa a lógica do programa muito mais completa e inteligente!"),
+	TEXT("Parabéns pela fase!"),
+	TEXT("Te vejo na próxima!"),
+	ROOM_GOTO(rm_sublevels_2)
+];
 //-------DIÁLOGO FINAL -------
 global.topics[$"FINAL_DIALOGUE"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
@@ -437,6 +482,12 @@ global.topics[$"HELP_SUBLEVEL2_1"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Está com dúvidas? Sem problemas!"),
 	CHOICE("Com o que posso te ajudar?", OPTION("Condicionais", "HELP_CONDICIONAIS"), OPTION("Objetivo da fase", "HELP_OBJSUBLEVEL2_1"))
+];
+
+global.topics[$"HELP_SUBLEVEL2_2"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Está com dúvidas? Sem problemas!"),
+	CHOICE("Com o que posso te ajudar?", OPTION("Condicionais", "HELP_CONDICIONAISSENAO"), OPTION("Objetivo da fase", "HELP_OBJSUBLEVEL2_2"))
 ];
 
 
@@ -520,6 +571,14 @@ global.topics[$"HELP_OBJSUBLEVEL2_1"] = [
 	TEXT("Algumas ações só funcionam em certas situações, como quando eu só posso comer SE tiver comida no pote!"),
 	TEXT("Leia cada declaração com atenção e veja se a condicional faz sentido!"),
 	TEXT("Se ficar na dúvida, revisite a explicação sobre condicionais para lembrar como elas funcionam!")
+];
+
+global.topics[$"HELP_OBJSUBLEVEL2_2"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("O objetivo dessa fase é analisar declarações com SE e SENÃO para ver se elas são válidas!"),
+	TEXT("Lembre-se: o SENÃO mostra o que acontece quando a condição do SE for falsa."),
+	TEXT("Se as duas partes da frase fizerem sentido, a condicional está válida!"),
+	TEXT("Leia com atenção e pense se a lógica da frase está coerente do começo ao fim!")
 ];
 
 global.topics[$"HELP_OBJLEVEL2"] = [
@@ -620,6 +679,20 @@ global.topics[$"HELP_CONDICIONAIS"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("É como ter regras inteligentes que mudam conforme a situação!"),
 	TEXT("Alguns blocos só funcionam em certas condições. Preste atenção!")
+];
+
+global.topics[$"HELP_CONDICIONAISSENAO"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Agora vamos para um passo a mais: condicionais com SENÃO!"),
+	TEXT("Elas servem para dizer o que acontece quando a condição é verdadeira e também quando ela é falsa."),
+	TEXT("A estrutura fica assim: if (condição) { ação se for verdadeira } else { ação se for falsa }"),
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Exemplo: SE tiver comida, ENTÃO eu como; SENÃO, eu vou ao mercado."),
+	TEXT("Se a condição do SE não for atendida, o programa executa o que está no SENÃO."),
+	TEXT("E também podemos colocar outra condicional dentro do SENÃO para testar um novo caso!"),
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Então pense sempre nas duas possibilidades: quando é verdadeiro e quando é falso!"),
+	TEXT("Se as duas partes fizerem sentido, sua condicional está bem montada!")
 ];
 
 

@@ -45,6 +45,14 @@ function scr_setup_fase(fase) {
 			sucess_dialogue = $"SUCCESS_LEVEL2";
         break;
 		
+		 case 2.1:
+            script_fase = scr_level2_1;
+			script_verify = scr_null;
+			help_fase = $"HELP_SUBLEVEL2_1";
+			inicio_fase = $"INTRO_SUBLEVEL2_1";
+			sucess_dialogue = $"SUCCES_SUBLEVEL2_1";
+        break;
+		
 		case 3:
             script_fase = scr_level3;
 			script_verify = scr_verify_level3;

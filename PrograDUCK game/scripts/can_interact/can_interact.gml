@@ -8,7 +8,7 @@ function can_interact() {
     }
     
     // Bloqueia interação se o levelmanager está executando ações
-    if (instance_exists(obj_levelmanager) && obj_levelmanager.is_executing) {
+    if (instance_exists(obj_gamemanager) && obj_gamemanager.is_executing) {
         return false;
     }
 	

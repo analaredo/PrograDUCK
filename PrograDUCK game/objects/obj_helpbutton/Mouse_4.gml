@@ -7,7 +7,7 @@ if (can_interact()) {
         global.totalhelp = 0;
     }
     global.totalhelp += 1;
-    with (obj_levelmanager){
+    with (obj_gamemanager){
         startDialogue(help_fase);
     }
 }

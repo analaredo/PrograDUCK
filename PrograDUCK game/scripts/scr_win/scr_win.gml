@@ -1,6 +1,6 @@
 function scr_win () {
 	
- with (obj_levelmanager){
+ with (obj_gamemanager){
 	 
 	 startDialogue(sucess_dialogue);
 	 
@@ -32,10 +32,22 @@ function scr_win () {
 			 room_index = 2; // Libera fase 2 (índice 1)
 			 break;	 
 			 
-		 case rm_fase2:
+
+		case rm_fase2_1:
+			 current_level_index = -1; // Fase 2
+			 room_index = 1; // Libera subfase 2_2 (índice 1)
+			 level_type = "sublevel2";
+			 break;	 
+		case rm_fase2_2:
+			 current_level_index = -1; // Fase 2
+			 room_index = 2; // Libera subfase 2_3 (índice 2)
+			 level_type = "sublevel2";
+			 break;
+		 case rm_fase2_3:
 			 current_level_index = 2; // Fase 2
 			 room_index = 3; // Libera fase 3 (índice 2)
 			 break;
+			 
 		 case rm_fase3:
 			 current_level_index = 3; // Fase 3
 			 room_index = 4; // Libera fase 4 (índice 3)
@@ -79,6 +91,11 @@ function scr_win () {
 			 global.sublevels1[room_index] = 1;
 		 }
 		 break;
+
+		 case "sublevel2":
+		 if (room_index != -1 && room_index < array_length(global.sublevels2)) {
+			 global.sublevels2[room_index] = 1;
+		 }
 		 
 	 }
  }

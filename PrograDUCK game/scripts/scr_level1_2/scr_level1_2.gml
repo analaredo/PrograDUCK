@@ -1,5 +1,5 @@
 function scr_level1_2(){
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
        
         if (array_length(slots) >= 3) {
                 slot0 = slots[0].card_action;
@@ -18,7 +18,7 @@ function scr_level1_2(){
             case "var_bool":
                 startDialogue("ERROR_UNRELATEDCARD");
                 scr_fail();
-                break;    
+                
           
 		  case "var_int":
 			
@@ -26,7 +26,7 @@ function scr_level1_2(){
 			default:
 			 startDialogue($"ERROR_EMPTYSLOT");
 			 return;
-			 break;
+			
            
         }   
             
@@ -35,18 +35,18 @@ function scr_level1_2(){
              startDialogue("ERROR_UNRELATEDCARD");
                 scr_fail();
                 return;
-                break;    
+                 
             case "var_bool":
 				 break;
             case "var_int":
                 startDialogue("ERROR_UNRELATEDCARD"); 
                 scr_fail()  ;
                 return;
-                break;
+            
             default:
 			 startDialogue($"ERROR_EMPTYSLOT");
 			 return;
-			 break;
+	
         } 
 
 
@@ -58,16 +58,16 @@ function scr_level1_2(){
                 startDialogue("ERROR_UNRELATEDCARD");
                 scr_fail();
                 return;
-                break;    
+                  
             case "var_int":
 			  startDialogue("ERROR_UNRELATEDCARD"); 
                 scr_fail()  ;
 			  return;
-                break;
+            
 			default:
 			 startDialogue($"ERROR_EMPTYSLOT");
 			 return;
-			 break;	
+		
         }
 
         // Verifica se todas as condições estão corretas para vitória

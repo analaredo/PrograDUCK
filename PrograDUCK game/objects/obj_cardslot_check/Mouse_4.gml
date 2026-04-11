@@ -1,0 +1,3 @@
+audio_play_sound(snd_click,0,false);
+
+card_action = !card_action;

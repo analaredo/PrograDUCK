@@ -1,5 +1,5 @@
 function scr_level1_1(){
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
        
         if (!variable_instance_exists(id, "action_queue")) {
             action_queue = ds_queue_create();

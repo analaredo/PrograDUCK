@@ -38,6 +38,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"num_level","filters":[],"listItems":[],"multiselect":false,"name":"num_level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"target_room","filters":[],"listItems":[],"multiselect":false,"name":"target_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"level_array","filters":[],"listItems":[],"multiselect":false,"name":"level_array","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"global.sublevels1","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

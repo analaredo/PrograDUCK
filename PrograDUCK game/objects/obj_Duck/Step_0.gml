@@ -11,9 +11,9 @@ if (state == DuckState.FINISHED){
 	
 if (state == DuckState.CONFUSED) {
     sprite_index = sprite[DuckState.CONFUSED, face];
-	if (instance_exists(obj_levelmanager)) {
-		obj_levelmanager.is_executing = false;
-        obj_levelmanager.current_slot = 0;
+	if (instance_exists(obj_gamemanager)) {
+		obj_gamemanager.is_executing = false;
+        obj_gamemanager.current_slot = 0;
         
     }
 	current_action = noone;
@@ -33,9 +33,9 @@ if (state == DuckState.WALK && instance_exists(target)) {
 }
 
 // === Processa queue de ações quando IDLE e não há ação composta ativa ===
-if (state == DuckState.IDLE && current_action == noone && instance_exists(obj_levelmanager)) {
+if (state == DuckState.IDLE && current_action == noone && instance_exists(obj_gamemanager)) {
     var queue_finished = false;
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
         if (variable_instance_exists(id, "action_queue") && ds_exists(action_queue, ds_type_queue) && !ds_queue_empty(action_queue)) {
             var next_action = ds_queue_dequeue(action_queue);
             execute_action(next_action.action, next_action.target);

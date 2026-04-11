@@ -8,6 +8,6 @@ if (can_interact()) {
    scr_reset();
     
     global.totaltries += 1;
-    obj_levelmanager.script_fase();
+    obj_gamemanager.script_fase();
 } 
 

@@ -107,3 +107,7 @@ if (finished && option_count > 0) {
 		draw_text(opt_x + option_text_x, opt_y - option_height / 2, options[i].text);
 	}
 }
+
+// Restore default alignment so other UI text in the same frame is not shifted.
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);

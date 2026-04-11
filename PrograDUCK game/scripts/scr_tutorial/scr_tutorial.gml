@@ -1,5 +1,5 @@
 function scr_tutorial(){
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
     var slot0 = noone;
     var slot1 = noone;
 

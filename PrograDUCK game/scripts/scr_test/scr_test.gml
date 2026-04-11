@@ -1,5 +1,5 @@
 function scr_test(){
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
         // Verifica se a tigela está vazia
         var bowl_empty = false;
         if (instance_exists(obj_bowl)) {

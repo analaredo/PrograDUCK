@@ -1,0 +1,1 @@
+text_content =  "Marque as condicionais válidas:";

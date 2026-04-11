@@ -4,7 +4,7 @@ global.topics = {};
 
 global.topics[$"ERROR_WRONGCARDCOLOR"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Hmm... Acho que esse BLOCO não é da cor que as intruções pedem..."),
+	TEXT("Hmm... Acho que esse BLOCO não é da cor que as instruções pedem..."),
 	TEXT("Lembre-se, o BLOCO laranja e o BLOCO azul vão para os espaços dados no enunciado!"),
 	GOTO("TRY_AGAIN")	
 
@@ -20,9 +20,10 @@ global.topics[$"ERROR_UNRELATEDCARD"] = [
 
 global.topics[$"ERROR_EMPTYSLOT"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
-	TEXT("Ops! Parece que tem um espaço vazio..."),
+	TEXT("Ops! Parece que tem um compartimento vazio..."),
 	TEXT("Revisitar a história ou a explicação sobre variáveis pode ajudar a descobrir qual BLOCO falta aqui!"),
-	GOTO("TRY_AGAIN")
+    GOTO("TRY_AGAIN")
+
 ];
 
 global.topics[$"ERROR_RETELLSTORY"] = [
@@ -190,17 +191,47 @@ global.topics[$"TRY_AGAIN"] = [
 	
 ];
 
+global.topics[$"ERROR_ERRORSENTENCE1"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Hmm, a frase 1 parece estar correta..."),
+	TEXT("Se estou cansado, faz sentido dormir, né?"),
+	TEXT("A condição leva a uma ação coerente."),
+	TEXT("Talvez valha a pena revisar essa classificação!")
+];
+global.topics[$"ERROR_ERRORSENTENCE2"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Hmm... meu instinto de pato tá achando isso estranho, a frase 2 parece estar errada..."),
+	TEXT("Se gosta de dormir no escuro... por que acender a luz?"),
+	TEXT("Parece que a ação foi pro lado oposto!"),
+	TEXT("Que tal tentar de novo?")
+];
+
+global.topics[$"ERROR_ERRORSENTENCE3"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Hmm, a frase 3 parece estar correta..."),
+	TEXT("Se sentir frio, vestir um casaco é uma resposta lógica."),
+	TEXT("A condição leva naturalmente à ação."),
+	TEXT("Que tal revisar essa escolha?")
+];
+
+global.topics[$"ERROR_ERRORSENTENCE4"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Acho que na frase 4 tem um probleminha..."),
+	TEXT("Abrir o aplicativo e não abrir ao mesmo tempo não dá, né?"),
+	TEXT("A ação contradiz diretamente a condição."),
+	TEXT("Em lógica, isso não funciona muito bem! Ela não deveria ser considerada uma condicional válida!"),
+];
 
 
 //-------INTROS -------
 global.topics[$"INTRO_TUTORIAL"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Olá! Eu sou o DUCK! Bem-vindo ao mundo da programação! Para avançar pelas minhas falas, aperte a tecla ENTER!"),
-	TEXT("O objetivo do jogo é me ajudar a completar minhas tarefas diárias usando blocos de programação!"),
-	TEXT("Cada bloco representa uma ação ou um comando, e você precisa arrastá-los para os espaços certos para me ajudar a completar as tarefas!"),
-	TEXT("Para arrastar os blocos para os espaços, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o espaço onde acha que ele deve ir, e soltar!"),
-	TEXT("As instruções para completar essa fase já estão na tela, mas se precisar de ajuda, é só clicar no botão de ajuda para receber dicas!"),
-	
+    TEXT("O objetivo do jogo é me ajudar a completar minhas tarefas diárias usando blocos de programação!"),
+	TEXT("Cada bloco representa uma ação ou um comando. você precisa arrastá-los para os compartimentos certos para me ajudar a completar as tarefas!"),
+	TEXT("Para arrastar os blocos para os compartimentos, clique e segure o bloco que você quer usar, arraste-o para o compartimento onde acha que ele deve ir, e solte!"),
+    TEXT("As instruções para completar essa fase já estão na tela. Se precisar de ajuda, é só clicar no botão de ajuda para receber dicas!"),
+
 	
 ];
 
@@ -239,6 +270,19 @@ global.topics[$"INTRO_LEVEL1"] = [
 		TEXT("Acredito em você! Se precisar de uma ajudinha extra, clique na opção de ajuda para receber dicas!")
 
 ];
+
+global.topics[$"INTRO_SUBLEVEL2_1"] =[
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Olá, de novo! Pronto para continuar aprendendo?"),
+	TEXT("Estou com muita fome, e preciso da sua ajuda, mas antes preciso te explicar sobre condicionais!"),
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("Algumas ações só funcionam em certas situações!"),
+	TEXT("Por exemplo: só posso comer SE tiver comida."),
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Isso se chama CONDICIONAIS! Legal, né?"),
+	TEXT("Nessa fase, vou te dar algumas declarações, e você deve marcar se são condicionais ou não!"),
+	TEXT("Acredito em você! Se precisar de uma ajudinha extra, clique na opção de ajuda para receber dicas!")
+]
 
 global.topics[$"INTRO_LEVEL2"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
@@ -283,8 +327,6 @@ global.topics[$"INTRO_LEVEL4"] = [
 global.topics[$"SUCCESS_TUTORIAL"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Parabéns! Você completou a fase tutorial!"),
-	TEXT("Viu como é importante prestar atenção nos detalhes para escolher os blocos certos?"),
-	TEXT("Com a prática, isso vai ficando mais fácil!"),
 	TEXT("Agora que você entendeu a mecânica do jogo, vamos para a próxima fase?"),
 	TEXT("Te vejo lá!"),
 	ROOM_GOTO(rm_levels)
@@ -348,6 +390,16 @@ global.topics[$"SUCCESS_LEVEL4"] = [
 	TEXT("Obrigado por me ajudar, humano!"),
 	GOTO("FINAL_DIALOGUE")
 ];
+
+global.topics[$"SUCCESS_SUBLEVEL2_1"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Isso aí! Você entendeu direitinho como funcionam as condicionais!"),
+	TEXT("Saber identificar quando uma ação só funciona em certas situações é muito importante!"),
+	TEXT("Com a prática, fica cada vez mais fácil reconhecer essas situações!"),
+	TEXT("Vamos para a próxima fase?"),
+	TEXT("Te vejo lá!"),
+	ROOM_GOTO(rm_sublevels_2)
+];
 //-------DIÁLOGO FINAL -------
 global.topics[$"FINAL_DIALOGUE"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
@@ -379,6 +431,12 @@ global.topics[$"HELP_SUBLEVEL1_2"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Está com dúvidas? Sem problemas!"),
 	CHOICE("Com o que posso te ajudar?", OPTION("Variáveis", "HELP_VARS"), OPTION("Objetivo da fase", "HELP_OBJSUBLEVEL1_2"))
+];
+
+global.topics[$"HELP_SUBLEVEL2_1"] = [
+	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
+	TEXT("Está com dúvidas? Sem problemas!"),
+	CHOICE("Com o que posso te ajudar?", OPTION("Condicionais", "HELP_CONDICIONAIS"), OPTION("Objetivo da fase", "HELP_OBJSUBLEVEL2_1"))
 ];
 
 
@@ -419,7 +477,7 @@ global.topics[$"HELP_HOWTOPLAY"] = [
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Para arrastar os blocos para os espaços, é só clicar e segurar o bloco que você quer usar, arrastá-lo para o espaço onde acha que ele deve ir, e soltar!"),
 	TEXT("Quando colocar os blocos nos espaços, é só clicar no botão de 'Executar' para ver o resultado!"),
-	TEXT("Caso ache que preencheu errado, clique no botão de resetar para tentar de novo!"),
+	TEXT("Caso ache que preencheu errado, clique no botão de redefinir (seta girando) para tentar de novo!"),
 	TEXT("Se precisar de mais ajuda, é só clicar nesse botão de ajuda de novo para revisar as instruções!")
 ];
 
@@ -454,6 +512,14 @@ global.topics[$"HELP_OBJLEVEL1"] = [
 	TEXT("Assim, meu programa funciona direitinho e sem erros!"),
 	TEXT("Caso precise de mais ajuda sobre varíaveis e seus tipos, é só clicar na opção de ajuda sobre variáveis!")
 	
+];
+
+global.topics[$"HELP_OBJSUBLEVEL2_1"] = [
+	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
+	TEXT("O objetivo dessa fase é me ajudar a descobrir se cada declaração representa uma condicional ou não!"),
+	TEXT("Algumas ações só funcionam em certas situações, como quando eu só posso comer SE tiver comida no pote!"),
+	TEXT("Leia cada declaração com atenção e veja se a condicional faz sentido!"),
+	TEXT("Se ficar na dúvida, revisite a explicação sobre condicionais para lembrar como elas funcionam!")
 ];
 
 global.topics[$"HELP_OBJLEVEL2"] = [
@@ -545,6 +611,9 @@ global.topics[$"HELP_CONDICIONAIS"] = [
 	SPEAKER("DUCK", portrait_duck_happy, PORTRAIT_SIDE.LEFT),
 	TEXT("Ah, as condicionais! São super importantes na programação!"),
 	TEXT("Imagine que é como tomar uma decisão: SE isso acontecer, ENTÃO faça aquilo."),
+	TEXT("Em programação, as condicionais são escritas assim: if (condição) { ação a ser executada se a condição for verdadeira }"),
+	TEXT("Dentro dos parênteses vai a condição, e ela precisa resultar em verdadeiro ou falso."),
+	TEXT("Se a condição for verdadeira, o bloco dentro das chaves é executado."),
 	SPEAKER("DUCK", portrait_duck_confused, PORTRAIT_SIDE.LEFT),
 	TEXT("Por exemplo: SE meu pote estiver vazio, ENTÃO eu só posso fazer certas coisas..."),
 	TEXT("Mas SE meu pote estiver cheio, ENTÃO posso fazer outras coisas diferentes!"),

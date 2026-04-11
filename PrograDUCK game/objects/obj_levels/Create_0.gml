@@ -1,4 +1,4 @@
 event_inherited();
 
 //Checando se eu estou bloqueado
-status = global.levels[num_level];
+status = level_array[num_level];

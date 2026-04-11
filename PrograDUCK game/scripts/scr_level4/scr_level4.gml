@@ -1,5 +1,5 @@
 function scr_level4(){
-    with (obj_levelmanager) {
+    with (obj_gamemanager) {
       
         
         // Cria uma queue de ações

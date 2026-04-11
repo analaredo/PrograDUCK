@@ -8,7 +8,6 @@ function scr_createslots(){
 		for (var i = 0; i < slot_count; i++) {
 		    var slot_id = instance_find(obj_cardslot, i);   
 		    if (instance_exists(slot_id)) {
-		        show_debug_message("Adicionando slot " + string(slot_id) + " ao array");
 		        array_push(slots, slot_id);
 		    }
 		}
